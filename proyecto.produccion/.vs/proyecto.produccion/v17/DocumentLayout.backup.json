@@ -1,12 +1,86 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{785CB0C3-08D7-4555-AF64-4834DBEC098A}|Shared\\Shared.csproj|C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\shared\\iproductionline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{785CB0C3-08D7-4555-AF64-4834DBEC098A}|Shared\\Shared.csproj|solutionrelative:shared\\iproductionline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D223905C-36BF-44C8-A388-6F491C022B8C}|Host\\Host.csproj|c:\\users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\host\\interfaceconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D223905C-36BF-44C8-A388-6F491C022B8C}|Host\\Host.csproj|solutionrelative:host\\interfaceconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A40FE7D-2A02-45C6-8335-75DCFDF75C95}|Client\\Client.csproj|C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A40FE7D-2A02-45C6-8335-75DCFDF75C95}|Client\\Client.csproj|solutionrelative:client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D223905C-36BF-44C8-A388-6F491C022B8C}|Host\\Host.csproj|C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\host\\productionline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D223905C-36BF-44C8-A388-6F491C022B8C}|Host\\Host.csproj|solutionrelative:host\\productionline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Client\\Program.cs",
+              "RelativeDocumentMoniker": "Client\\Program.cs",
+              "ToolTip": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Client\\Program.cs",
+              "RelativeToolTip": "Client\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T16:00:06.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InterfaceConnection.cs",
+              "DocumentMoniker": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Host\\InterfaceConnection.cs",
+              "RelativeDocumentMoniker": "Host\\InterfaceConnection.cs",
+              "ToolTip": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Host\\InterfaceConnection.cs",
+              "RelativeToolTip": "Host\\InterfaceConnection.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T15:46:58.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductionLine.cs",
+              "DocumentMoniker": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Host\\ProductionLine.cs",
+              "RelativeDocumentMoniker": "Host\\ProductionLine.cs",
+              "ToolTip": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Host\\ProductionLine.cs",
+              "RelativeToolTip": "Host\\ProductionLine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T15:40:38.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IProductionLine.cs",
+              "DocumentMoniker": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Shared\\IProductionLine.cs",
+              "RelativeDocumentMoniker": "Shared\\IProductionLine.cs",
+              "ToolTip": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Shared\\IProductionLine.cs",
+              "RelativeToolTip": "Shared\\IProductionLine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T19:51:33.324Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

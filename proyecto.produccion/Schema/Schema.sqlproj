@@ -56,5 +56,25 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Tables" />
+    <Folder Include="Stored Procedures" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Client.sql" />
+    <Build Include="Tables\Color.sql" />
+    <Build Include="Tables\Piece.sql" />
+    <Build Include="Tables\Material.sql" />
+    <Build Include="Tables\PieceType.sql" />
+    <Build Include="Tables\ProcessType.sql" />
+    <Build Include="Tables\ProductionLine.sql" />
+    <Build Include="Tables\State.sql" />
+    <Build Include="Tables\Station.sql" />
+    <Build Include="Tables\StationType.sql" />
+    <Build Include="Tables\WorkOrder.sql" />
+    <Build Include="Stored Procedures\InsPiece.sql" />
+    <Build Include="Stored Procedures\InsWorkOrder.sql" />
+    <Build Include="Stored Procedures\putPieceOnEntry.sql" />
+    <Build Include="Stored Procedures\putPieceOnExit.sql" />
+    <Build Include="Stored Procedures\putPieceOnProcess.sql" />
   </ItemGroup>
 </Project>
