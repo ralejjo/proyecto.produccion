@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace Shared
 {
-    public interface IProductionLine
+    public interface IClient
     {
-        int productionLineId { get; }
-        string description { get; }
+        int clientId { get; }
+        string name { get; }
+        string address { get; }
+        string mobilePhone { get; }
+        int cuit {  get; }
         bool isActive { get; }
         DateTime startedAt { get; }
         DateTime updatedAt { get; }

@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 
 namespace Shared
 {
-    public interface IProductionLine
+    public interface IStation
     {
+        int stationId { get; }
+        string name { get; }
+        int pieceIdOnEntry { get; }
+        int pieceIdOnProcess { get; }
+        int pieceIdOnExit { get; }
+        int stationTypeId { get; }
         int productionLineId { get; }
-        string description { get; }
         bool isActive { get; }
         DateTime startedAt { get; }
         DateTime updatedAt { get; }

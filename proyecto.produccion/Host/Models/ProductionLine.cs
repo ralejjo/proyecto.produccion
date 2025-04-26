@@ -7,7 +7,7 @@ using Shared;
 
 namespace Host
 {
-    public class ProductionLine : MarshalByRefObject, IProductionLine
+    public class ProductionLine : MarshalByRefObject, IStation
     {
         // Desarrollar logica
     }

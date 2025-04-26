@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Shared
 {
-    public interface IProductionLine
+    public interface IStationType
     {
-        int productionLineId { get; }
+        int stationTypeId { get; }
         string description { get; }
         bool isActive { get; }
         DateTime startedAt { get; }

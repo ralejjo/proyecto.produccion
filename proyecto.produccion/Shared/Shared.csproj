@@ -41,8 +41,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO\ClientDto.cs" />
+    <Compile Include="DTO\ColorDto.cs" />
+    <Compile Include="DTO\MaterialDto.cs" />
+    <Compile Include="DTO\PieceDto.cs" />
+    <Compile Include="DTO\PieceTypeDto.cs" />
+    <Compile Include="DTO\ProcessTypeDto.cs" />
+    <Compile Include="DTO\ProductionLineDto.cs" />
+    <Compile Include="DTO\StateDto.cs" />
+    <Compile Include="DTO\StationDto.cs" />
+    <Compile Include="DTO\StationTypeDto.cs" />
+    <Compile Include="DTO\WorkOrderDto.cs" />
+    <Compile Include="IClient.cs" />
+    <Compile Include="IColor.cs" />
+    <Compile Include="IMaterial.cs" />
+    <Compile Include="IPiece.cs" />
+    <Compile Include="IPieceType.cs" />
+    <Compile Include="IProcessType.cs" />
     <Compile Include="IProductionLine.cs" />
+    <Compile Include="IState.cs" />
+    <Compile Include="IStation.cs" />
+    <Compile Include="IStationType.cs" />
+    <Compile Include="IWorkOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
