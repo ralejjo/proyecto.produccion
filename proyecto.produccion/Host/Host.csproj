@@ -42,8 +42,22 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="Tenaris.Library.DbClient, Version=4.1.0.0, Culture=neutral, PublicKeyToken=c58e4ef934a092e9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Tenaris.Library.DbClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Tenaris.Library.DbClient.Data, Version=4.1.0.0, Culture=neutral, PublicKeyToken=02ad1b8891a318c9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Tenaris.Library.DbClient.Data.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\Context.cs" />
+    <Compile Include="Database\InsPiece.cs" />
+    <Compile Include="Database\InsWorkOrder.cs" />
+    <Compile Include="Database\PutPieceOnEntry.cs" />
+    <Compile Include="Database\PutPieceOnExit.cs" />
+    <Compile Include="Database\PutPieceOnProcess.cs" />
     <Compile Include="InterfaceConnection.cs" />
     <Compile Include="Models\ProductionLine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -57,8 +71,6 @@
       <Name>Shared</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Database\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
