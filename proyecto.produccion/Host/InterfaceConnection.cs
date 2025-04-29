@@ -21,8 +21,8 @@ namespace Host
 
             TcpServerChannel serverChannel = new TcpServerChannel(properties, null, null);
             ChannelServices.RegisterChannel(serverChannel, false);
-            RemotingConfiguration.RegisterWellKnownServiceType(typeof(ProductionLine),
-                "ProductionLine", WellKnownObjectMode.Singleton); //SingleCall si quiero que todos usen la misma instancia de ProductionLine
+            RemotingConfiguration.RegisterWellKnownServiceType(typeof(LibraryManager),
+                "LibraryManager", WellKnownObjectMode.Singleton); //SingleCall si quiero que todos usen la misma instancia de ProductionLine
 
             Console.WriteLine("Listening on {0}", serverChannel.GetChannelUri());
             Console.WriteLine("Press the enter key to exit...");

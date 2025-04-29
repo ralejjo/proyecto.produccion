@@ -17,6 +17,8 @@ BEGIN
 	insert into Piece(colorId,materialId,stateId,typeId,width,length,thickness,pieceOrderId)
 	values
 	(@colorid,@materialid,@stateid,@typeid,@width,@length,@thickness,@pieceorderid)
+
+	select scope_identity() as [identity]
 END
 GO
 

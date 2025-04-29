@@ -21,5 +21,7 @@ namespace Host.Database
         public float @thickness { get; set; }
         [DbParam]
         public int @pieceorderid { get; set; }
+        [DbField]
+        public int @identity { get; set; }
     }
 }

@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="DTO\ClientDto.cs" />
     <Compile Include="DTO\ColorDto.cs" />
+    <Compile Include="DTO\CreateWorkOrderDto.cs" />
     <Compile Include="DTO\MaterialDto.cs" />
     <Compile Include="DTO\PieceDto.cs" />
     <Compile Include="DTO\PieceTypeDto.cs" />
@@ -54,6 +55,7 @@
     <Compile Include="DTO\WorkOrderDto.cs" />
     <Compile Include="IClient.cs" />
     <Compile Include="IColor.cs" />
+    <Compile Include="ILibraryManager.cs" />
     <Compile Include="IMaterial.cs" />
     <Compile Include="IPiece.cs" />
     <Compile Include="IPieceType.cs" />

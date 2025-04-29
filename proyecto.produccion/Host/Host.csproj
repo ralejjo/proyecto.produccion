@@ -59,7 +59,9 @@
     <Compile Include="Database\PutPieceOnExit.cs" />
     <Compile Include="Database\PutPieceOnProcess.cs" />
     <Compile Include="InterfaceConnection.cs" />
+    <Compile Include="LibraryManager.cs" />
     <Compile Include="Models\ProductionLine.cs" />
+    <Compile Include="Models\WorkOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

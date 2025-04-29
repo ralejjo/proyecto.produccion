@@ -20,5 +20,7 @@ namespace Host.Database
         public int @quantity { get; set; }
         [DbParam]
         public int @processtypeid { get; set; }
+        [DbField]
+        public int @identity { get; set; }
     }
 }
