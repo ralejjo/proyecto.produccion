@@ -1,0 +1,10 @@
+C:\Users\redon\source\repos\proyecto.produccion\proyecto.produccion\Host\obj\Debug\Host.csproj.AssemblyReference.cache
+C:\Users\redon\source\repos\proyecto.produccion\proyecto.produccion\Host\obj\Debug\Host.csproj.CoreCompileInputs.cache
+C:\Users\redon\source\repos\proyecto.produccion\proyecto.produccion\Host\bin\Debug\Host.exe.config
+C:\Users\redon\source\repos\proyecto.produccion\proyecto.produccion\Host\bin\Debug\Host.exe
+C:\Users\redon\source\repos\proyecto.produccion\proyecto.produccion\Host\bin\Debug\Host.pdb
+C:\Users\redon\source\repos\proyecto.produccion\proyecto.produccion\Host\bin\Debug\Shared.dll
+C:\Users\redon\source\repos\proyecto.produccion\proyecto.produccion\Host\bin\Debug\Shared.pdb
+C:\Users\redon\source\repos\proyecto.produccion\proyecto.produccion\Host\obj\Debug\Host.csproj.Up2Date
+C:\Users\redon\source\repos\proyecto.produccion\proyecto.produccion\Host\obj\Debug\Host.exe
+C:\Users\redon\source\repos\proyecto.produccion\proyecto.produccion\Host\obj\Debug\Host.pdb

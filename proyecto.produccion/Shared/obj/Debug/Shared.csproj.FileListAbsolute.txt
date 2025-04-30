@@ -1,0 +1,6 @@
+C:\Users\redon\source\repos\proyecto.produccion\proyecto.produccion\Shared\bin\Debug\Shared.dll
+C:\Users\redon\source\repos\proyecto.produccion\proyecto.produccion\Shared\bin\Debug\Shared.pdb
+C:\Users\redon\source\repos\proyecto.produccion\proyecto.produccion\Shared\obj\Debug\Shared.csproj.AssemblyReference.cache
+C:\Users\redon\source\repos\proyecto.produccion\proyecto.produccion\Shared\obj\Debug\Shared.csproj.CoreCompileInputs.cache
+C:\Users\redon\source\repos\proyecto.produccion\proyecto.produccion\Shared\obj\Debug\Shared.dll
+C:\Users\redon\source\repos\proyecto.produccion\proyecto.produccion\Shared\obj\Debug\Shared.pdb

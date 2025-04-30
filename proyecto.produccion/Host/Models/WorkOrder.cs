@@ -55,7 +55,7 @@ namespace Host
 
         public int CreateWorkOrder(CreateWorkOrderDto workOrder)
         {
-            var piezaId = db.Execute
+            var newPiece = db.Execute
                 (
                     new InsPiece
                     {
@@ -65,7 +65,8 @@ namespace Host
                         typeid = workOrder.TypeId,
                         width = workOrder.Width,
                         length = workOrder.Length,
-                        thickness = workOrder.Thickness }
+                        thickness = workOrder.Thickness
+                    }
                 );
             var result = db.Execute
                 (
@@ -75,12 +76,21 @@ namespace Host
                         lote = workOrder.Lote,
                         colada = workOrder.Colada,
                         clientid = workOrder.ClientId,
-                        pieceid = piezaId.identity,
+                        pieceid = newPiece.identity,
                         quantity = workOrder.Quantity,
                         processtypeid = workOrder.ProcessTypeId
                     }
                 );
             return result.identity;
         }
+
+        //public void InitializeWorkOrder(CreateWorkOrderDto workOrder)
+        //{
+        //    _workOrderId = wo
+        //    _date = workOrder.Date;
+        //    _lote = workOrder.Lote;
+        //    _colada = workOrder.Colada;
+
+        //}
     }
 }

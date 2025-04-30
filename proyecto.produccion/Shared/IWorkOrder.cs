@@ -20,7 +20,7 @@ namespace Shared
         bool isActive { get; }
         DateTime startedAt { get; }
         DateTime updatedAt { get; }
-
+        //void InitializeWorkOrder(CreateWorkOrderDto workOrder);
         int CreateWorkOrder(CreateWorkOrderDto workOrder);
     }
 }

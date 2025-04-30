@@ -1,0 +1,19 @@
+
+****************************************************
+** New log start at: 30/4/2025 14:31:03                            
+****************************************************
+- 2025-04-30 14:31:03.496 [                      Host.exe:              5] [lap=1,94    mS]            Tenaris.Library.Log | - NEW THREAD
+- 2025-04-30 14:31:03.537 [                      Host.exe:              5] [lap=41,86   mS]            Tenaris.Library.Log | - Application Profiling Service configured, trying to activate Tenaris.Service.Profiling.ProfilingService, Tenaris.Service.Profiling
+! 2025-04-30 14:31:03.538 [                      Host.exe:              5] [lap=1,15    mS]            Tenaris.Library.Log | ! Application Profiling Service not loaded. Could not get type for type name Tenaris.Service.Profiling.ProfilingService, Tenaris.Service.Profiling
+- 2025-04-30 14:31:03.539 [                      Host.exe:              5] [lap=395,80  uS]            Tenaris.Library.Log | - Default configuration provider was created because no other was configured.
+- 2025-04-30 14:31:03.611 [                      Host.exe:              5] [lap=72,74   mS]            Tenaris.Library.Log | - [ASSEMBLY_LOADED] FullName=System.Data.resources, Version=4.0.0.0, Culture=es, PublicKeyToken=b77a5c561934e089 - Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Data.resources\v4.0_4.0.0.0_es_b77a5c561934e089\System.Data.resources.dll
+- 2025-04-30 14:31:03.735 [                      Host.exe:              5] [lap=123,66  mS]            Tenaris.Library.Log | - [ASSEMBLY_LOADED] FullName=System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a - Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.EnterpriseServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll
+- 2025-04-30 14:31:04.529 [                      Host.exe:              5] [lap=794,56  mS]            Tenaris.Library.Log | - [ASSEMBLY_LOADED] FullName=System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a - Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Caching\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.Caching.dll
+@ 2025-04-30 14:31:05.021 [                      Host.exe:              5] [lap=491,75  mS]            Tenaris.Library.Log | @ Binding property 'InsPiece.identity' should not have a public setter
+- 2025-04-30 14:31:05.182 [                      Host.exe:              5] [lap=160,73  mS]            Tenaris.Library.Log | - EXEC dbo.InsPiece #colorid=1#materialid=1#stateid=1#typeid=1#width=12#length=12#thickness=1#pieceorderid=0 - laptime=133,2348 ms
+ RESULT: [colorid=1, materialid=1, stateid=1, typeid=1, width=12, length=12, thickness=1, pieceorderid=0, identity=0]
+ RESULT: [colorid=1, materialid=1, stateid=1, typeid=1, width=12, length=12, thickness=1, pieceorderid=0, identity=6]
+@ 2025-04-30 14:31:05.271 [                      Host.exe:              5] [lap=88,61   mS]            Tenaris.Library.Log | @ Binding property 'InsWorkOrder.identity' should not have a public setter
+- 2025-04-30 14:31:05.369 [                      Host.exe:              5] [lap=98,34   mS]            Tenaris.Library.Log | - EXEC dbo.InsWorkOrder #date=1/1/0001 00:00:00#lote=10#colada=100#clientid=1#pieceid=6#quantity=10#processtypeid=1 - laptime=97,3761 ms
+ RESULT: [date=1/1/0001 00:00:00, lote=10, colada=100, clientid=1, pieceid=6, quantity=10, processtypeid=1, identity=0]
+ RESULT: [date=1/1/0001 00:00:00, lote=10, colada=100, clientid=1, pieceid=6, quantity=10, processtypeid=1, identity=9]
