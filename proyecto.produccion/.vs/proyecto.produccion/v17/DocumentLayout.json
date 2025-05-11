@@ -3,48 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D223905C-36BF-44C8-A388-6F491C022B8C}|Host\\Host.csproj|c:\\users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\host\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{D223905C-36BF-44C8-A388-6F491C022B8C}|Host\\Host.csproj|solutionrelative:host\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D223905C-36BF-44C8-A388-6F491C022B8C}|Host\\Host.csproj|c:\\users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\host\\database\\inspiece.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D223905C-36BF-44C8-A388-6F491C022B8C}|Host\\Host.csproj|solutionrelative:host\\database\\inspiece.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D223905C-36BF-44C8-A388-6F491C022B8C}|Host\\Host.csproj|C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\host\\models\\workorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D223905C-36BF-44C8-A388-6F491C022B8C}|Host\\Host.csproj|solutionrelative:host\\models\\workorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E61B4E4-A280-41A2-A97D-F323015FF0A2}|Client\\Client.csproj|C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\client\\viewmodel\\createworkorderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E61B4E4-A280-41A2-A97D-F323015FF0A2}|Client\\Client.csproj|solutionrelative:client\\viewmodel\\createworkorderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D223905C-36BF-44C8-A388-6F491C022B8C}|Host\\Host.csproj|c:\\users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\host\\librarymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D223905C-36BF-44C8-A388-6F491C022B8C}|Host\\Host.csproj|solutionrelative:host\\librarymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D223905C-36BF-44C8-A388-6F491C022B8C}|Host\\Host.csproj|c:\\users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\host\\interfaceconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D223905C-36BF-44C8-A388-6F491C022B8C}|Host\\Host.csproj|solutionrelative:host\\interfaceconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E61B4E4-A280-41A2-A97D-F323015FF0A2}|Client\\Client.csproj|c:\\users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\client\\view\\createworkorderview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E61B4E4-A280-41A2-A97D-F323015FF0A2}|Client\\Client.csproj|solutionrelative:client\\view\\createworkorderview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E61B4E4-A280-41A2-A97D-F323015FF0A2}|Client\\Client.csproj|c:\\users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\client\\viewmodel\\productionlineviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E61B4E4-A280-41A2-A97D-F323015FF0A2}|Client\\Client.csproj|solutionrelative:client\\viewmodel\\productionlineviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E61B4E4-A280-41A2-A97D-F323015FF0A2}|Client\\Client.csproj|c:\\users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\client\\view\\createworkorderview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9E61B4E4-A280-41A2-A97D-F323015FF0A2}|Client\\Client.csproj|solutionrelative:client\\view\\createworkorderview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E61B4E4-A280-41A2-A97D-F323015FF0A2}|Client\\Client.csproj|c:\\users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\client\\command\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E61B4E4-A280-41A2-A97D-F323015FF0A2}|Client\\Client.csproj|solutionrelative:client\\command\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{785CB0C3-08D7-4555-AF64-4834DBEC098A}|Shared\\Shared.csproj|c:\\users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\shared\\dto\\statedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{785CB0C3-08D7-4555-AF64-4834DBEC098A}|Shared\\Shared.csproj|solutionrelative:shared\\dto\\statedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{785CB0C3-08D7-4555-AF64-4834DBEC098A}|Shared\\Shared.csproj|c:\\users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\shared\\iworkorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{785CB0C3-08D7-4555-AF64-4834DBEC098A}|Shared\\Shared.csproj|solutionrelative:shared\\iworkorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{785CB0C3-08D7-4555-AF64-4834DBEC098A}|Shared\\Shared.csproj|C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\shared\\dto\\createworkorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{785CB0C3-08D7-4555-AF64-4834DBEC098A}|Shared\\Shared.csproj|solutionrelative:shared\\dto\\createworkorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E61B4E4-A280-41A2-A97D-F323015FF0A2}|Client\\Client.csproj|c:\\users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\client\\viewmodel\\createworkorderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E61B4E4-A280-41A2-A97D-F323015FF0A2}|Client\\Client.csproj|solutionrelative:client\\viewmodel\\createworkorderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,53 +31,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Host\\App.config",
-              "RelativeDocumentMoniker": "Host\\App.config",
-              "ToolTip": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Host\\App.config",
-              "RelativeToolTip": "Host\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-04-30T17:28:39.757Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InsPiece.cs",
-              "DocumentMoniker": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Host\\Database\\InsPiece.cs",
-              "RelativeDocumentMoniker": "Host\\Database\\InsPiece.cs",
-              "ToolTip": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Host\\Database\\InsPiece.cs",
-              "RelativeToolTip": "Host\\Database\\InsPiece.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Title": "ProductionLineViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Client\\ViewModel\\ProductionLineViewModel.cs",
+              "RelativeDocumentMoniker": "Client\\ViewModel\\ProductionLineViewModel.cs",
+              "ToolTip": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Client\\ViewModel\\ProductionLineViewModel.cs",
+              "RelativeToolTip": "Client\\ViewModel\\ProductionLineViewModel.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAADwv0cAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T17:27:32.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "InterfaceConnection.cs",
-              "DocumentMoniker": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Host\\InterfaceConnection.cs",
-              "RelativeDocumentMoniker": "Host\\InterfaceConnection.cs",
-              "ToolTip": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Host\\InterfaceConnection.cs",
-              "RelativeToolTip": "Host\\InterfaceConnection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T17:19:32.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CreateWorkOrderView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Client\\View\\CreateWorkOrderView.xaml.cs",
-              "RelativeDocumentMoniker": "Client\\View\\CreateWorkOrderView.xaml.cs",
-              "ToolTip": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Client\\View\\CreateWorkOrderView.xaml.cs",
-              "RelativeToolTip": "Client\\View\\CreateWorkOrderView.xaml.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T16:47:07.146Z",
+              "WhenOpened": "2025-05-11T15:50:53.634Z",
               "EditorCaption": ""
             },
             {
@@ -116,86 +49,34 @@
               "RelativeDocumentMoniker": "Client\\ViewModel\\CreateWorkOrderViewModel.cs",
               "ToolTip": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Client\\ViewModel\\CreateWorkOrderViewModel.cs",
               "RelativeToolTip": "Client\\ViewModel\\CreateWorkOrderViewModel.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAUwCMAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAOYAAAAAAAAAAAAAAO4AAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T14:33:51.062Z",
+              "WhenOpened": "2025-05-11T15:50:12.734Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "WorkOrder.cs",
-              "DocumentMoniker": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Host\\Models\\WorkOrder.cs",
-              "RelativeDocumentMoniker": "Host\\Models\\WorkOrder.cs",
-              "ToolTip": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Host\\Models\\WorkOrder.cs",
-              "RelativeToolTip": "Host\\Models\\WorkOrder.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAAAEUAAAASAAAAAAAAAA==",
+              "Title": "StateDto.cs",
+              "DocumentMoniker": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Shared\\DTO\\StateDto.cs",
+              "RelativeDocumentMoniker": "Shared\\DTO\\StateDto.cs",
+              "ToolTip": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Shared\\DTO\\StateDto.cs",
+              "RelativeToolTip": "Shared\\DTO\\StateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T18:51:29.978Z",
+              "WhenOpened": "2025-05-11T15:49:23.44Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LibraryManager.cs",
-              "DocumentMoniker": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Host\\LibraryManager.cs",
-              "RelativeDocumentMoniker": "Host\\LibraryManager.cs",
-              "ToolTip": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Host\\LibraryManager.cs",
-              "RelativeToolTip": "Host\\LibraryManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T17:13:22.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "CreateWorkOrderView.xaml",
               "DocumentMoniker": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Client\\View\\CreateWorkOrderView.xaml",
               "RelativeDocumentMoniker": "Client\\View\\CreateWorkOrderView.xaml",
               "ToolTip": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Client\\View\\CreateWorkOrderView.xaml",
               "RelativeToolTip": "Client\\View\\CreateWorkOrderView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-30T17:01:52.339Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RelayCommand.cs",
-              "DocumentMoniker": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Client\\Command\\RelayCommand.cs",
-              "RelativeDocumentMoniker": "Client\\Command\\RelayCommand.cs",
-              "ToolTip": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Client\\Command\\RelayCommand.cs",
-              "RelativeToolTip": "Client\\Command\\RelayCommand.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T17:05:32.556Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IWorkOrder.cs",
-              "DocumentMoniker": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Shared\\IWorkOrder.cs",
-              "RelativeDocumentMoniker": "Shared\\IWorkOrder.cs",
-              "ToolTip": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Shared\\IWorkOrder.cs",
-              "RelativeToolTip": "Shared\\IWorkOrder.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAuwBYAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T15:42:19.285Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CreateWorkOrderDto.cs",
-              "DocumentMoniker": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Shared\\DTO\\CreateWorkOrderDto.cs",
-              "RelativeDocumentMoniker": "Shared\\DTO\\CreateWorkOrderDto.cs",
-              "ToolTip": "C:\\Users\\redon\\source\\repos\\proyecto.produccion\\proyecto.produccion\\Shared\\DTO\\CreateWorkOrderDto.cs",
-              "RelativeToolTip": "Shared\\DTO\\CreateWorkOrderDto.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAuwA8AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T02:31:13.95Z",
+              "WhenOpened": "2025-05-11T14:37:50.399Z",
               "EditorCaption": ""
             }
           ]

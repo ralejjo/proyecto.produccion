@@ -9,15 +9,16 @@ namespace Shared
 {
     public interface ILibraryManager
     {
-        //IClient client { get; }
-        //IColor color { get; }
-        //IMaterial material { get; }
-        //IPiece piece { get; }
-        //IPieceType pieceType { get; }
-        //IProcessType processType { get; }
+        IClient client { get; }
+        IColor color { get; }
+        IMaterial material { get; }
+        IPiece piece { get; }
+        IPieceType pieceType { get; }
+        IProcessType processType { get; }
         IProductionLine productionLine { get; }
-        //IState state { get; }
-        //IStation station { get; }
+        IState state { get; }
+        IStation cutStation { get; }
+        IStation paintStation { get; }
         //IStationType stationType { get; }
         IWorkOrder workOrder { get; }
     }

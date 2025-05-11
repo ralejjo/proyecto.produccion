@@ -9,10 +9,10 @@ namespace Shared.DTO
     [Serializable]
     public class StationTypeDto
     {
-        public int stationTypeId { get; }
+        public int stationTypeId { get; set; }
         public string description { get; set; }
         public bool isActive { get; set; }
-        public DateTime startedAt { get; }
+        public DateTime startedAt { get; set; }
         public DateTime updatedAt { get; set; }
     }
 }

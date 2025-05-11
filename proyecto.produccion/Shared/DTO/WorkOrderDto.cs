@@ -9,7 +9,7 @@ namespace Shared.DTO
     [Serializable]
     public class WorkOrderDto
     {
-        public int workOrderId { get; }
+        public int workOrderId { get; set; }
         public DateTime date { get; set; }
         public int lote { get; set; }
         public int colada { get; set; }
@@ -18,7 +18,7 @@ namespace Shared.DTO
         public int quantity { get; set; }
         public int processTypeId { get; set; }
         public bool isActive { get; set; }
-        public DateTime startedAt { get; }
+        public DateTime startedAt { get; set; }
         public DateTime updatedAt { get; set; }
     }
 }

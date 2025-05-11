@@ -2,7 +2,7 @@
 
 namespace Host.Database
 {
-    [DbStoredProc("dbo.putPieceOnEntry")]
+    [DbStoredProc("dbo.PutPieceOnEntry")]
     internal class PutPieceOnEntry
     {
         [DbParam]

@@ -65,7 +65,7 @@ namespace Host
                         typeid = workOrder.TypeId,
                         width = workOrder.Width,
                         length = workOrder.Length,
-                        thickness = workOrder.Thickness
+                        thickness = workOrder.Thickness,
                     }
                 );
             var result = db.Execute

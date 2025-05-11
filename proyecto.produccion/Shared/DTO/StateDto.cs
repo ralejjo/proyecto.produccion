@@ -9,10 +9,10 @@ namespace Shared.DTO
     [Serializable]
     public class StateDto
     {
-        public int stateId { get; }
+        public int id { get; set; }
         public string description { get; set; }
         public bool isActive { get; set; }
-        public DateTime startedAt { get; }
+        public DateTime startedAt { get; set; }
         public DateTime updatedAt { get; set; }
     }
 }

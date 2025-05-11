@@ -32,5 +32,12 @@ namespace Client.View
 
             DataContext = _ViewModel;
         }
+
+        private void BackToProductionLine_Click(object sender, RoutedEventArgs e)
+        {
+            var productionLineView = new ProductionLineView();
+            productionLineView.Show();
+            this.Close();
+        }
     }
 }

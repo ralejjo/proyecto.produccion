@@ -7,88 +7,163 @@
         xmlns:viewmodel="clr-namespace:Client.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:CreateWorkOrderViewModel}"
         mc:Ignorable="d"
         Title="CreateWorkOrderView" Height="450" Width="800">
-    <Grid>
-        <!--<StackPanel HorizontalAlignment="Center" Height="387" Margin="0,10,0,0" VerticalAlignment="Top" Width="732">
-            <TextBox x:Name="Lote" Text="{Binding WorkOrder.Lote}" TextChanged="Lote_TextChanged"/>
-            
-            
+    <DockPanel RenderTransformOrigin="0.502,0.478">
 
-        </StackPanel>-->
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Background="LightGray" Height="30">
+            <Button Content="Volver" Margin="10,0,0,0" Width="100" Height="20" Click="BackToProductionLine_Click"/>
+        </StackPanel>
+        
+        <!--<Grid>
 
-        <StackPanel x:Name="StackUpLeft" Grid.Row="0" Grid.Column="0">
-            <StackPanel Orientation="Vertical">
-                <Label Content="Lote"/>
-                <TextBox x:Name="txtLote" Text="{Binding WorkOrder.Lote}"/>
-            </StackPanel>
-            <StackPanel Orientation="Vertical">
-                <Label Content="Colada"/>
-                <TextBox x:Name="txtColada" Text="{Binding WorkOrder.Colada}"/>
-            </StackPanel>
-            <StackPanel Orientation="Vertical">
-                <Label Content="Fecha de Ingreso"/>
-                <DatePicker x:Name="Date" Text="{Binding WorkOrder.Date}"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="StackUpRight" Grid.Row="0" Grid.Column="1">
-            <StackPanel Orientation="Vertical">
-                <Label Content="Cantidad"/>
-                <TextBox x:Name="Quantity" Text="{Binding WorkOrder.Quantity}"/>
-            </StackPanel>
-            <StackPanel Orientation="Vertical">
-                <Label Content="Tipo de Proceso"/>
-                <TextBox x:Name="ProcessType" Text="{Binding WorkOrder.ProcessTypeId}"/>
-            </StackPanel>
-            <StackPanel Orientation="Vertical">
-                <Label Content="Cliente"/>
-                <TextBox x:Name="Client" Text="{Binding WorkOrder.ClientId}"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="StackDownLeft" Grid.Row="1" Grid.Column="0">
-            <StackPanel Orientation="Vertical">
-                <Label Content="Color"/>
-                <TextBox x:Name="Color" Text="{Binding WorkOrder.ColorId}"/>
-            </StackPanel>
-            <StackPanel Orientation="Vertical">
-                <Label Content="Material"/>
-                <TextBox x:Name="Material" Text="{Binding WorkOrder.MaterialId}"/>
-            </StackPanel>
-            <StackPanel Orientation="Vertical">
-                <Label Content="Cliente"/>
-                <TextBox x:Name="State" Text="{Binding WorkOrder.StateId}"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="StackDownRight" Grid.Row="1" Grid.Column="1">
-            <StackPanel Orientation="Vertical">
-                <Label Content="Longitud"/>
-                <TextBox x:Name="txtLength" Text="{Binding WorkOrder.Length}"/>
-            </StackPanel>
-            <StackPanel Orientation="Vertical">
-                <Label Content="Ancho"/>
-                <TextBox x:Name="txtWidth" Text="{Binding WorkOrder.Width}"/>
-            </StackPanel>
-            <StackPanel Orientation="Vertical">
-                <Label Content="Espesor"/>
-                <TextBox x:Name="txtThickness" Text="{Binding WorkOrder.Thickness}"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="StackDownDownLeft" Grid.Row="2" Grid.Column="0">
-            <StackPanel Orientation="Vertical">
-                <Label Content="Tipo de Pieza"/>
-                <TextBox x:Name="PieceType" Text="{Binding WorkOrder.TypeId}"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="StackDownDownRight" Grid.Row="2" Grid.Column="1">
-            <Button x:Name="btnCreate" Content="Crear" Command="{Binding CreateWorkOrderCommand}"/>
-        </StackPanel>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
-    </Grid>
+            <StackPanel x:Name="StackUpLeft" Grid.Row="0" Grid.Column="0" Margin="0,0,0,144" Grid.RowSpan="2">
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Lote"/>
+                    <TextBox x:Name="txtLote" Text="{Binding WorkOrder.Lote}"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Colada"/>
+                    <TextBox x:Name="txtColada" Text="{Binding WorkOrder.Colada}"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Fecha de Ingreso"/>
+                    <DatePicker x:Name="Date" Text="{Binding WorkOrder.Date}"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel x:Name="StackUpRight" Grid.Row="0" Grid.Column="1" Margin="0,0,0,144" Grid.RowSpan="2">
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Cantidad"/>
+                    <TextBox x:Name="Quantity" Text="{Binding WorkOrder.Quantity}"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Tipo de Proceso"/>
+                    <ComboBox x:Name="cbxProcessType" ItemsSource="{Binding ProcessTypeList}" SelectedValue="{Binding WorkOrder.ProcessTypeId}" DisplayMemberPath="description" SelectedValuePath="processTypeId"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Cliente"/>
+                    <ComboBox x:Name="cbxClient" ItemsSource="{Binding ClientList}" SelectedValue="{Binding WorkOrder.ClientId}" DisplayMemberPath="name" SelectedValuePath="clientId"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel x:Name="StackDownLeft" Grid.Row="1" Grid.Column="0">
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Color"/>
+                    <ComboBox x:Name="cbxColor" ItemsSource="{Binding ColorList}" SelectedValue="{Binding WorkOrder.ColorId}" DisplayMemberPath="description" SelectedValuePath="colorId"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Material"/>
+                    <ComboBox x:Name="cbxMaterial" ItemsSource="{Binding MaterialList}" SelectedValue="{Binding WorkOrder.MaterialId}" DisplayMemberPath="description" SelectedValuePath="materialId"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Estado"/>
+                    <ComboBox x:Name="cbxState" ItemsSource="{Binding StateList}" SelectedValue="{Binding WorkOrder.StateId}" DisplayMemberPath="description" SelectedValuePath="stateId"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel x:Name="StackDownRight" Grid.Row="1" Grid.Column="1">
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Longitud"/>
+                    <TextBox x:Name="txtLength" Text="{Binding WorkOrder.Length}"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Ancho"/>
+                    <TextBox x:Name="txtWidth" Text="{Binding WorkOrder.Width}"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Espesor"/>
+                    <TextBox x:Name="txtThickness" Text="{Binding WorkOrder.Thickness}"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel x:Name="StackDownDownLeft" Grid.Row="1" Grid.Column="0" Margin="0,144,0,0" Grid.RowSpan="3">
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Tipo de Pieza"/>
+                    <ComboBox x:Name="cbxPieceType" ItemsSource="{Binding PieceTypeList}" SelectedValue="{Binding WorkOrder.TypeId}" DisplayMemberPath="description" SelectedValuePath="pieceTypeId"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel x:Name="StackDownDownRight" Grid.Row="1" Grid.Column="1" Margin="0,144,0,0" Grid.RowSpan="3">
+                <Button x:Name="btnCreate" Content="Crear" Command="{Binding CreateWorkOrderCommand}"/>
+            </StackPanel>
+
+        </Grid>-->
+
+        <Grid Margin="20">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" Margin="10">
+                    <Label Content="Lote"/>
+                    <TextBox Text="{Binding WorkOrder.Lote}" />
+
+                    <Label Content="Colada"/>
+                    <TextBox Text="{Binding WorkOrder.Colada}" />
+
+                    <Label Content="Fecha de Ingreso"/>
+                    <DatePicker SelectedDate="{Binding WorkOrder.Date}" />
+
+                    <Label Content="Cantidad"/>
+                    <TextBox Text="{Binding WorkOrder.Quantity}" />
+
+                    <Label Content="Tipo de Proceso"/>
+                    <ComboBox ItemsSource="{Binding ProcessTypeList}" SelectedValue="{Binding WorkOrder.ProcessTypeId}" DisplayMemberPath="description" SelectedValuePath="id"/>
+
+                    <Label Content="Cliente"/>
+                    <ComboBox ItemsSource="{Binding ClientList}" SelectedValue="{Binding WorkOrder.ClientId}" DisplayMemberPath="name" SelectedValuePath="id"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Margin="10">
+                    <Label Content="Color"/>
+                    <ComboBox ItemsSource="{Binding ColorList}" SelectedValue="{Binding WorkOrder.ColorId}" DisplayMemberPath="description" SelectedValuePath="id"/>
+
+                    <Label Content="Material"/>
+                    <ComboBox ItemsSource="{Binding MaterialList}" SelectedValue="{Binding WorkOrder.MaterialId}" DisplayMemberPath="description" SelectedValuePath="id"/>
+
+                    <Label Content="Estado"/>
+                    <ComboBox ItemsSource="{Binding StateList}" SelectedValue="{Binding WorkOrder.StateId}" DisplayMemberPath="description" SelectedValuePath="id"/>
+
+                    <Label Content="Longitud"/>
+                    <TextBox Text="{Binding WorkOrder.Length}" />
+
+                    <Label Content="Ancho"/>
+                    <TextBox Text="{Binding WorkOrder.Width}" />
+
+                    <Label Content="Espesor"/>
+                    <TextBox Text="{Binding WorkOrder.Thickness}" />
+                </StackPanel>
+            </Grid>
+
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="10">
+                <Label Content="Tipo de Pieza" VerticalAlignment="Center"/>
+                <ComboBox Width="200"
+                  ItemsSource="{Binding PieceTypeList}"
+                  SelectedValue="{Binding WorkOrder.TypeId}"
+                  DisplayMemberPath="description"
+                  SelectedValuePath="id"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right" Margin="0,-10,0,0">
+                <Button Content="Crear" Width="120" Height="30" Command="{Binding CreateWorkOrderCommand}"/>
+            </StackPanel>
+
+        </Grid>
+
+    </DockPanel>
 </Window>

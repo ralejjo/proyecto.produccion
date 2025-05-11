@@ -9,7 +9,7 @@ namespace Shared.DTO
     [Serializable]
     public class PieceDto
     {
-        public int pieceId { get; }
+        public int pieceId { get; set; }
         public int colorId { get; set; }
         public int materialId { get; set; }
         public int stateId { get; set; }
@@ -19,7 +19,7 @@ namespace Shared.DTO
         public float thickness { get; set; }
         public int pieceOrderId { get; set; }
         public bool isActive { get; set; }
-        public DateTime startedAt { get; }
+        public DateTime startedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
     }
 }

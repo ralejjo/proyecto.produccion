@@ -55,10 +55,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Command\AsyncRelayCommand.cs" />
     <Compile Include="Command\RelayCommand.cs" />
+    <Compile Include="Model\StateModel.cs" />
+    <Compile Include="Model\StationModel.cs" />
     <Compile Include="ViewModel\CreateWorkOrderViewModel.cs" />
+    <Compile Include="ViewModel\CutStationViewModel.cs" />
+    <Compile Include="ViewModel\ProductionLineViewModel.cs" />
     <Compile Include="View\CreateWorkOrderView.xaml.cs">
       <DependentUpon>CreateWorkOrderView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CutStationView.xaml.cs">
+      <DependentUpon>CutStationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductionLineView.xaml.cs">
+      <DependentUpon>ProductionLineView.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -74,6 +85,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="View\CreateWorkOrderView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CutStationView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ProductionLineView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

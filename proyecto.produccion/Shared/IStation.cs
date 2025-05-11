@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Shared.DTO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,5 +19,9 @@ namespace Shared
         bool isActive { get; }
         DateTime startedAt { get; }
         DateTime updatedAt { get; }
+        int ProcessPiece(PieceDto processPiece);
+        void PutPieceOnEntry(StationDto stationId, PieceDto pieceId);
+        StationDto[] GetStationById(int stationId);
+        void InitializeStation(StationDto station);
     }
 }

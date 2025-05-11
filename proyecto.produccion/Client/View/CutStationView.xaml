@@ -1,0 +1,44 @@
+﻿<Window x:Class="Client.View.CutStationView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client.View"
+        xmlns:viewmodel="clr-namespace:Client.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:CutStationViewModel}"
+        mc:Ignorable="d"
+        Title="CutStationView" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel x:Name="StackLeft" Grid.Column="0">
+            <StackPanel Orientation="Vertical">
+                <Label Content="Pieza de Entrada"/>
+                <TextBox x:Name="pieceOnEntry" Text="{Binding Piece.pieceId}"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Button x:Name="btnSavePieceOnEntry" Content="Ingresar Pieza" Command="{Binding PutPieceOnEntryCommand}"/>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel x:Name="StackRigth" Grid.Column="1">
+            <StackPanel Orientation="Vertical">
+                <Label Content="Length"/>
+                <TextBox x:Name="Length" Text="{Binding Piece.length}"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Label Content="Width"/>
+                <TextBox x:Name="Width" Text="{Binding Piece.width}"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Label Content="Thickness"/>
+                <TextBox x:Name="Thickness" Text="{Binding Piece.thickness}"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Button x:Name="btnCutPiece" Content="Cortar Pieza" Command="{Binding CutPieceCommand}"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

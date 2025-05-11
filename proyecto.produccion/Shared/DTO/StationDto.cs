@@ -9,7 +9,7 @@ namespace Shared.DTO
     [Serializable]
     public class StationDto
     {
-        public int stationId { get; }
+        public int stationId { get; set; }
         public string name { get; set; }
         public int pieceIdOnEntry { get; set; }
         public int pieceIdOnProcess { get; set; }
@@ -17,7 +17,7 @@ namespace Shared.DTO
         public int stationTypeId { get; set; }
         public int productionLineId { get; set; }
         public bool isActive { get; set; }
-        public DateTime startedAt { get; }
+        public DateTime startedAt { get; set; }
         public DateTime updatedAt { get; set; }
     }
 }

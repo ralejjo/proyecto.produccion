@@ -61,14 +61,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\Context.cs" />
+    <Compile Include="Database\CortarPieza.cs" />
+    <Compile Include="Database\GetClient.cs" />
+    <Compile Include="Database\GetColor.cs" />
+    <Compile Include="Database\GetMaterial.cs" />
+    <Compile Include="Database\GetPieceByState.cs" />
+    <Compile Include="Database\GetPieceType.cs" />
+    <Compile Include="Database\GetProcessType.cs" />
+    <Compile Include="Database\GetState.cs" />
+    <Compile Include="Database\GetStationById.cs" />
     <Compile Include="Database\InsPiece.cs" />
     <Compile Include="Database\InsWorkOrder.cs" />
+    <Compile Include="Database\PaintPiece.cs" />
     <Compile Include="Database\PutPieceOnEntry.cs" />
     <Compile Include="Database\PutPieceOnExit.cs" />
     <Compile Include="Database\PutPieceOnProcess.cs" />
     <Compile Include="InterfaceConnection.cs" />
     <Compile Include="LibraryManager.cs" />
+    <Compile Include="Models\Client.cs" />
+    <Compile Include="Models\Color.cs" />
+    <Compile Include="Models\Material.cs" />
+    <Compile Include="Models\PaintStation.cs" />
+    <Compile Include="Models\Piece.cs" />
+    <Compile Include="Models\PieceType.cs" />
+    <Compile Include="Models\ProcessType.cs" />
     <Compile Include="Models\ProductionLine.cs" />
+    <Compile Include="Models\CutStation.cs" />
+    <Compile Include="Models\State.cs" />
+    <Compile Include="Models\Station.cs" />
     <Compile Include="Models\WorkOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

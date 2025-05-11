@@ -1,0 +1,102 @@
+
+****************************************************
+** New log start at: 11/5/2025 11:36:19                            
+****************************************************
+- 2025-05-11 11:36:19.124 [                      Host.exe:              5] [lap=6,30    mS]            Tenaris.Library.Log | - NEW THREAD
+- 2025-05-11 11:36:19.209 [                      Host.exe:              5] [lap=87,54   mS]            Tenaris.Library.Log | - Application Profiling Service configured, trying to activate Tenaris.Service.Profiling.ProfilingService, Tenaris.Service.Profiling
+! 2025-05-11 11:36:19.211 [                      Host.exe:              5] [lap=2,37    mS]            Tenaris.Library.Log | ! Application Profiling Service not loaded. Could not get type for type name Tenaris.Service.Profiling.ProfilingService, Tenaris.Service.Profiling
+- 2025-05-11 11:36:19.212 [                      Host.exe:              5] [lap=1,62    mS]            Tenaris.Library.Log | - Default configuration provider was created because no other was configured.
+- 2025-05-11 11:36:19.354 [                      Host.exe:              5] [lap=148,67  mS]            Tenaris.Library.Log | - [ASSEMBLY_LOADED] FullName=System.Data.resources, Version=4.0.0.0, Culture=es, PublicKeyToken=b77a5c561934e089 - Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Data.resources\v4.0_4.0.0.0_es_b77a5c561934e089\System.Data.resources.dll
+- 2025-05-11 11:36:19.561 [                      Host.exe:              5] [lap=210,26  mS]            Tenaris.Library.Log | - [ASSEMBLY_LOADED] FullName=System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a - Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.EnterpriseServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll
+- 2025-05-11 11:36:20.688 [                      Host.exe:              5] [lap=1,12     S]            Tenaris.Library.Log | - [ASSEMBLY_LOADED] FullName=System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a - Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Caching\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.Caching.dll
+@ 2025-05-11 11:36:22.010 [                      Host.exe:              5] [lap=1,32     S]            Tenaris.Library.Log | @ Binding property 'GetPieceByState.rows' should not have a public setter
+- 2025-05-11 11:36:22.017 [                      Host.exe:              6] [lap=1,14    mS]            Tenaris.Library.Log | - NEW THREAD
+@ 2025-05-11 11:36:22.017 [                      Host.exe:              6] [lap=299,00  uS]            Tenaris.Library.Log | @ Binding property 'GetClient.rows' should not have a public setter
+@ 2025-05-11 11:36:22.018 [                      Host.exe:              6] [lap=715,40  uS]            Tenaris.Library.Log | @ Binding property 'GetClient.rows' should not have a public setter
+@ 2025-05-11 11:36:22.039 [                      Host.exe:              6] [lap=21,29   mS]            Tenaris.Library.Log | @ Binding property 'GetClient.rows' should not have a public setter
+@ 2025-05-11 11:36:22.197 [                      Host.exe:              6] [lap=158,12  mS]            Tenaris.Library.Log | @ Binding property 'GetClient.rows' should not have a public setter
+@ 2025-05-11 11:36:22.199 [                      Host.exe:              6] [lap=1,30    mS]            Tenaris.Library.Log | @ Binding property 'GetClient.rows' should not have a public setter
+@ 2025-05-11 11:36:22.204 [                      Host.exe:              6] [lap=5,13    mS]            Tenaris.Library.Log | @ Binding property 'GetClient.rows' should not have a public setter
+! 2025-05-11 11:36:22.244 [                      Host.exe:              6] [lap=40,55   mS]            Tenaris.Library.Log | ! Unable to get field 'clientId' while filling class 'ClientDto'.
+- 2025-05-11 11:36:22.265 [                      Host.exe:              6] [lap=20,18   mS]            Tenaris.Library.Log | - EXEC dbo.GetClient  - laptime=155,4482 ms
+ RESULT SETS (1):
+  #0, 3 records [clientId, name, address, mobilePhone, cuit, isActive, startedAt, updatedAt]
+	[0, Tenaris, calle 123, 123345, 123, True, 29/4/2025 16:23:07, 29/4/2025 16:23:07]
+	[0, TubosSRL, calle 345, 12344, 345, True, 1/5/2025 14:35:32, 1/5/2025 14:35:32]
+	[0, Siderca, calle 234, 12334, 323, True, 1/5/2025 14:37:07, 1/5/2025 14:37:07]
+- 2025-05-11 11:36:22.265 [                      Host.exe:              5] [lap=255,07  mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceByState #stateId=1 - laptime=160,5656 ms
+ RESULT: [stateId=1]
+ RESULT SETS (1):
+  #0, 6 records [pieceId, colorId, materialId, stateId, typeId, width, length, thickness, pieceOrderId, isActive, startedAt, UpdatedAt]
+	[4, 1, 1, 1, 1, 10, 10, 10, 1, True, 29/4/2025 16:29:17, 29/4/2025 16:29:17]
+	[5, 1, 1, 1, 1, 10, 10, 10, 1, True, 29/4/2025 16:39:12, 29/4/2025 16:39:12]
+	[6, 1, 1, 1, 1, 12, 12, 1, 0, True, 30/4/2025 17:30:50, 30/4/2025 17:30:50]
+	[37, 2, 1, 1, 1, 0, 0, 0, 0, True, 6/5/2025 14:56:07, 6/5/2025 14:56:07]
+	...
+@ 2025-05-11 11:36:22.395 [                      Host.exe:              5] [lap=130,11  mS]            Tenaris.Library.Log | @ Binding property 'GetColor.rows' should not have a public setter
+@ 2025-05-11 11:36:22.395 [                      Host.exe:              5] [lap=529,90  uS]            Tenaris.Library.Log | @ Binding property 'GetColor.rows' should not have a public setter
+@ 2025-05-11 11:36:22.396 [                      Host.exe:              5] [lap=351,20  uS]            Tenaris.Library.Log | @ Binding property 'GetColor.rows' should not have a public setter
+@ 2025-05-11 11:36:22.500 [                      Host.exe:              5] [lap=104,36  mS]            Tenaris.Library.Log | @ Binding property 'GetColor.rows' should not have a public setter
+@ 2025-05-11 11:36:22.500 [                      Host.exe:              5] [lap=285,70  uS]            Tenaris.Library.Log | @ Binding property 'GetColor.rows' should not have a public setter
+@ 2025-05-11 11:36:22.500 [                      Host.exe:              5] [lap=188,80  uS]            Tenaris.Library.Log | @ Binding property 'GetColor.rows' should not have a public setter
+! 2025-05-11 11:36:22.502 [                      Host.exe:              5] [lap=1,72    mS]            Tenaris.Library.Log | ! Unable to get field 'colorId' while filling class 'ColorDto'.
+! 2025-05-11 11:36:22.503 [                      Host.exe:              5] [lap=1,09    mS]            Tenaris.Library.Log | ! Unable to get field 'updatedAt' while filling class 'ColorDto'.
+- 2025-05-11 11:36:22.507 [                      Host.exe:              5] [lap=3,93    mS]            Tenaris.Library.Log | - EXEC dbo.GetColor  - laptime=104,3092 ms
+ RESULT SETS (1):
+  #0, 4 records [colorId, description, isActive, startedAt, updatedAt]
+	[0, Rojo, True, 29/4/2025 16:25:22, 1/1/0001 00:00:00]
+	[0, Azul, True, 6/5/2025 14:52:23, 1/1/0001 00:00:00]
+	[0, Verde, True, 6/5/2025 14:52:27, 1/1/0001 00:00:00]
+	[0, Amarillo, True, 6/5/2025 14:52:31, 1/1/0001 00:00:00]
+@ 2025-05-11 11:36:22.603 [                      Host.exe:              5] [lap=96,01   mS]            Tenaris.Library.Log | @ Binding property 'GetProcessType.rows' should not have a public setter
+@ 2025-05-11 11:36:22.604 [                      Host.exe:              5] [lap=432,10  uS]            Tenaris.Library.Log | @ Binding property 'GetProcessType.rows' should not have a public setter
+@ 2025-05-11 11:36:22.604 [                      Host.exe:              5] [lap=331,30  uS]            Tenaris.Library.Log | @ Binding property 'GetProcessType.rows' should not have a public setter
+@ 2025-05-11 11:36:22.701 [                      Host.exe:              5] [lap=96,62   mS]            Tenaris.Library.Log | @ Binding property 'GetProcessType.rows' should not have a public setter
+@ 2025-05-11 11:36:22.701 [                      Host.exe:              5] [lap=267,00  uS]            Tenaris.Library.Log | @ Binding property 'GetProcessType.rows' should not have a public setter
+@ 2025-05-11 11:36:22.701 [                      Host.exe:              5] [lap=160,90  uS]            Tenaris.Library.Log | @ Binding property 'GetProcessType.rows' should not have a public setter
+! 2025-05-11 11:36:22.703 [                      Host.exe:              5] [lap=1,43    mS]            Tenaris.Library.Log | ! Unable to get field 'processTypeId' while filling class 'ProcessTypeDto'.
+- 2025-05-11 11:36:22.704 [                      Host.exe:              5] [lap=1,70    mS]            Tenaris.Library.Log | - EXEC dbo.GetProcessType  - laptime=96,5847 ms
+ RESULT SETS (1):
+  #0, 2 records [processTypeId, description, isActive, startedAt, updatedAt]
+	[0, Estandar, True, 29/4/2025 16:32:01, 29/4/2025 16:32:01]
+	[0, No estandar, True, 1/5/2025 14:43:53, 1/5/2025 14:43:53]
+@ 2025-05-11 11:36:22.802 [                      Host.exe:              5] [lap=97,83   mS]            Tenaris.Library.Log | @ Binding property 'GetPieceType.rows' should not have a public setter
+@ 2025-05-11 11:36:22.802 [                      Host.exe:              5] [lap=461,90  uS]            Tenaris.Library.Log | @ Binding property 'GetPieceType.rows' should not have a public setter
+@ 2025-05-11 11:36:22.803 [                      Host.exe:              5] [lap=266,50  uS]            Tenaris.Library.Log | @ Binding property 'GetPieceType.rows' should not have a public setter
+@ 2025-05-11 11:36:22.906 [                      Host.exe:              5] [lap=104,19  mS]            Tenaris.Library.Log | @ Binding property 'GetPieceType.rows' should not have a public setter
+@ 2025-05-11 11:36:22.907 [                      Host.exe:              5] [lap=596,90  uS]            Tenaris.Library.Log | @ Binding property 'GetPieceType.rows' should not have a public setter
+@ 2025-05-11 11:36:22.907 [                      Host.exe:              5] [lap=349,20  uS]            Tenaris.Library.Log | @ Binding property 'GetPieceType.rows' should not have a public setter
+! 2025-05-11 11:36:22.911 [                      Host.exe:              5] [lap=3,29    mS]            Tenaris.Library.Log | ! Unable to get field 'pieceTypeId' while filling class 'PieceTypeDto'.
+- 2025-05-11 11:36:22.913 [                      Host.exe:              5] [lap=2,70    mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceType  - laptime=104,0425 ms
+ RESULT SETS (1):
+  #0, 2 records [pieceTypeId, description, isActive, startedAt, updatedAt]
+	[0, Cuadrado, True, 24/4/2025 16:47:00, 24/4/2025 16:47:00]
+	[0, Rectangulo, True, 24/4/2025 16:48:00, 24/4/2025 16:48:00]
+@ 2025-05-11 11:36:23.009 [                      Host.exe:              5] [lap=95,20   mS]            Tenaris.Library.Log | @ Binding property 'GetMaterial.rows' should not have a public setter
+@ 2025-05-11 11:36:23.009 [                      Host.exe:              5] [lap=914,80  uS]            Tenaris.Library.Log | @ Binding property 'GetMaterial.rows' should not have a public setter
+@ 2025-05-11 11:36:23.010 [                      Host.exe:              5] [lap=920,90  uS]            Tenaris.Library.Log | @ Binding property 'GetMaterial.rows' should not have a public setter
+@ 2025-05-11 11:36:23.109 [                      Host.exe:              5] [lap=98,59   mS]            Tenaris.Library.Log | @ Binding property 'GetMaterial.rows' should not have a public setter
+@ 2025-05-11 11:36:23.110 [                      Host.exe:              5] [lap=788,60  uS]            Tenaris.Library.Log | @ Binding property 'GetMaterial.rows' should not have a public setter
+@ 2025-05-11 11:36:23.110 [                      Host.exe:              5] [lap=426,30  uS]            Tenaris.Library.Log | @ Binding property 'GetMaterial.rows' should not have a public setter
+! 2025-05-11 11:36:23.113 [                      Host.exe:              5] [lap=2,88    mS]            Tenaris.Library.Log | ! Unable to get field 'materialId' while filling class 'MaterialDto'.
+- 2025-05-11 11:36:23.116 [                      Host.exe:              5] [lap=3,26    mS]            Tenaris.Library.Log | - EXEC dbo.GetMaterial  - laptime=98,5112 ms
+ RESULT SETS (1):
+  #0, 3 records [materialId, description, isActive, startedAt, updatedAt]
+	[0, Acero, True, 29/4/2025 16:25:53, 29/4/2025 16:25:53]
+	[0, Aluminio, True, 6/5/2025 14:53:18, 6/5/2025 14:53:18]
+	[0, Hierro, True, 6/5/2025 14:53:27, 6/5/2025 14:53:27]
+@ 2025-05-11 11:36:23.418 [                      Host.exe:              5] [lap=301,33  mS]            Tenaris.Library.Log | @ Binding property 'GetState.rows' should not have a public setter
+@ 2025-05-11 11:36:23.419 [                      Host.exe:              5] [lap=1,01    mS]            Tenaris.Library.Log | @ Binding property 'GetState.rows' should not have a public setter
+@ 2025-05-11 11:36:23.420 [                      Host.exe:              5] [lap=892,30  uS]            Tenaris.Library.Log | @ Binding property 'GetState.rows' should not have a public setter
+@ 2025-05-11 11:36:23.519 [                      Host.exe:              5] [lap=98,25   mS]            Tenaris.Library.Log | @ Binding property 'GetState.rows' should not have a public setter
+@ 2025-05-11 11:36:23.519 [                      Host.exe:              5] [lap=466,30  uS]            Tenaris.Library.Log | @ Binding property 'GetState.rows' should not have a public setter
+@ 2025-05-11 11:36:23.519 [                      Host.exe:              5] [lap=199,40  uS]            Tenaris.Library.Log | @ Binding property 'GetState.rows' should not have a public setter
+! 2025-05-11 11:36:23.522 [                      Host.exe:              5] [lap=2,63    mS]            Tenaris.Library.Log | ! Unable to get field 'stateId' while filling class 'StateDto'.
+- 2025-05-11 11:36:23.529 [                      Host.exe:              5] [lap=6,70    mS]            Tenaris.Library.Log | - EXEC dbo.GetState  - laptime=98,2789 ms
+ RESULT SETS (1):
+  #0, 5 records [stateId, description, isActive, startedAt, updatedAt]
+	[0, Ingresada, True, 29/4/2025 16:26:37, 29/4/2025 16:26:37]
+	[0, Cortada, True, 2/5/2025 16:53:08, 2/5/2025 16:53:08]
+	[0, Validada, True, 2/5/2025 16:53:08, 2/5/2025 16:53:08]
+	[0, Pintada, True, 2/5/2025 16:53:08, 2/5/2025 16:53:08]
+	[0, Solicitada, True, 2/5/2025 16:53:08, 2/5/2025 16:53:08]
