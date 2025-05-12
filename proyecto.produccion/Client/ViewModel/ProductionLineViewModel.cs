@@ -19,11 +19,15 @@ namespace Client.ViewModel
     {
         public event PropertyChangedEventHandler PropertyChanged;
         private ObservableCollection<PieceDto> _pieceList;
-
-        private readonly INavigationService _navigationService;
+        private ObservableCollection<PieceDto> _pieceToQualityList;
+        private ObservableCollection<PieceDto> _pieceToPaintList;
 
         public ICommand AsyncGetPieceListCommand { get; private set; }
-        public ICommand PutPieceOnEntryCommand { get; private set; }
+        public ICommand AsyncGetPieceToQualityListCommand { get; private set; }
+        public ICommand AsyncGetPieceToPaintListCommand { get; private set; }
+        public ICommand PutPieceOnEntryToCutCommand { get; private set; }
+        public ICommand PutPieceOnEntryToQualityCommand { get; private set; }
+        public ICommand PutPieceOnEntryToPaintCommand { get; private set; }
 
         public event EventHandler RequestClose;
         public Action CloseAction { get; set; }
@@ -37,7 +41,11 @@ namespace Client.ViewModel
             Station = new StationDto();
 
             AsyncGetPieceListCommand = new AsyncRelayCommand(AsyncLoadPieceList, CanLoadPieceList);
-            PutPieceOnEntryCommand = new RelayCommand(PutPieceOnEntry, CanPutPieceOnEntry);
+            AsyncGetPieceToQualityListCommand = new AsyncRelayCommand(AsyncLoadPieceToQualityList, CanLoadPieceToQualityList);
+            AsyncGetPieceToPaintListCommand = new AsyncRelayCommand(AsyncLoadPieceToPaintList, CanLoadPieceToPaintList);
+            PutPieceOnEntryToCutCommand = new RelayCommand(PutPieceOnEntryToCut, CanPutPieceOnEntryToCut);
+            PutPieceOnEntryToQualityCommand = new RelayCommand(PutPieceOnEntryToQuality, CanPutPieceOnEntryToQuality);
+            PutPieceOnEntryToPaintCommand = new RelayCommand(PutPieceOnEntryToPaint, CanPutPieceOnEntryToPaint);
 
             Init();
         }
@@ -45,6 +53,8 @@ namespace Client.ViewModel
         private async void Init()
         {
             await AsyncLoadPieceList();
+            await AsyncLoadPieceToQualityList();
+            await AsyncLoadPieceToPaintList();
         }
 
         public ObservableCollection<PieceDto> PieceList
@@ -78,6 +88,68 @@ namespace Client.ViewModel
             return Task.Run(LoadPieceList);
         }
 
+        public ObservableCollection<PieceDto> PieceToQualityList
+        {
+            get { return _pieceToQualityList; }
+            set
+            {
+                _pieceToQualityList = value;
+                OnPropertyChanged("PieceToQualityList");
+            }
+        }
+
+        private bool CanLoadPieceToQualityList()
+        {
+            return true;
+        }
+
+        private void LoadPieceToQualityList()
+        {
+            PieceDto[] pieceToQualityList = LibraryManagerInstance.Instance.piece.GetAllByState((int)StateModel.Cortada)
+                .ToArray();
+
+            if (pieceToQualityList.Length > 0)
+            {
+                PieceToQualityList = new ObservableCollection<PieceDto>(pieceToQualityList);
+            }
+        }
+
+        private Task AsyncLoadPieceToQualityList()
+        {
+            return Task.Run(LoadPieceToQualityList);
+        }
+
+        public ObservableCollection<PieceDto> PieceToPaintList
+        {
+            get { return _pieceToPaintList; }
+            set
+            {
+                _pieceToPaintList = value;
+                OnPropertyChanged("PieceToPaintList");
+            }
+        }
+
+        private bool CanLoadPieceToPaintList()
+        {
+            return true;
+        }
+
+        private void LoadPieceToPaintList()
+        {
+            PieceDto[] pieceToPaintList = LibraryManagerInstance.Instance.piece.GetAllByState((int)StateModel.Calidad)
+                .ToArray();
+
+            if (pieceToPaintList.Length > 0)
+            {
+                PieceToPaintList = new ObservableCollection<PieceDto>(pieceToPaintList);
+            }
+        }
+
+        private Task AsyncLoadPieceToPaintList()
+        {
+            return Task.Run(LoadPieceToPaintList);
+        }
+
         private void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
@@ -88,7 +160,7 @@ namespace Client.ViewModel
             RequestClose?.Invoke(this, EventArgs.Empty);
         }
 
-        private void PutPieceOnEntry()
+        private void PutPieceOnEntryToCut()
         {
             StationDto[] station = LibraryManagerInstance.Instance.cutStation.GetStationById((int)StationModel.Corte).ToArray();
             Station = station[0];
@@ -96,7 +168,33 @@ namespace Client.ViewModel
             LibraryManagerInstance.Instance.cutStation.PutPieceOnEntry(Station, Piece);
         }
 
-        private bool CanPutPieceOnEntry()
+        private bool CanPutPieceOnEntryToCut()
+        {
+            return true;
+        }
+
+        private void PutPieceOnEntryToQuality()
+        {
+            //StationDto[] station = LibraryManagerInstance.Instance.qualityStation.GetStationById((int)StationModel.Corte).ToArray();
+            //Station = station[0];
+            //LibraryManagerInstance.Instance.qualityStation.InitializeStation(Station);
+            //LibraryManagerInstance.Instance.qualityStation.PutPieceOnEntry(Station, Piece);
+        }
+
+        private bool CanPutPieceOnEntryToQuality()
+        {
+            return true;
+        }
+
+        private void PutPieceOnEntryToPaint()
+        {
+            StationDto[] station = LibraryManagerInstance.Instance.paintStation.GetStationById((int)StationModel.Pintura).ToArray();
+            Station = station[0];
+            LibraryManagerInstance.Instance.paintStation.InitializeStation(Station);
+            LibraryManagerInstance.Instance.paintStation.PutPieceOnEntry(Station, Piece);
+        }
+
+        private bool CanPutPieceOnEntryToPaint()
         {
             return true;
         }

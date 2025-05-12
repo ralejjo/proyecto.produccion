@@ -21,6 +21,8 @@ namespace Shared
         DateTime updatedAt { get; }
         int ProcessPiece(PieceDto processPiece);
         void PutPieceOnEntry(StationDto stationId, PieceDto pieceId);
+        void PutPieceOnProcess(StationDto stationId, PieceDto pieceId);
+        void PutPieceOnExit(StationDto stationId, PieceDto pieceId);
         StationDto[] GetStationById(int stationId);
         void InitializeStation(StationDto station);
     }

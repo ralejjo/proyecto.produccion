@@ -21,5 +21,6 @@ namespace Shared
         IStation paintStation { get; }
         //IStationType stationType { get; }
         IWorkOrder workOrder { get; }
+        IPieceOrder pieceOrder { get; }
     }
 }

@@ -32,10 +32,32 @@ namespace Client.View
 
             DataContext = _ViewModel;
         }
+
         private void CreateWorkOrder_Click(object sender, RoutedEventArgs e)
         {
             var createWorkOrderView = new CreateWorkOrderView();
             createWorkOrderView.Show();
+            this.Close();
+        }
+
+        private void GoToCutStation_Click(object sender, RoutedEventArgs e)
+        {
+            var cutStationView = new CutStationView();
+            cutStationView.Show();
+            this.Close();
+        }
+
+        private void GoToQualityStation_Click(object sender, RoutedEventArgs e)
+        {
+            //var cutStationView = new CutStationView();
+            //cutStationView.Show();
+            //this.Close();
+        }
+
+        private void GoToPaintStation_Click(object sender, RoutedEventArgs e)
+        {
+            var paintStationView = new PaintStationView();
+            paintStationView.Show();
             this.Close();
         }
     }

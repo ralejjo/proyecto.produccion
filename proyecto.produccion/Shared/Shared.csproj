@@ -46,6 +46,8 @@
     <Compile Include="DTO\CreateWorkOrderDto.cs" />
     <Compile Include="DTO\MaterialDto.cs" />
     <Compile Include="DTO\PieceDto.cs" />
+    <Compile Include="DTO\PieceOrderDto.cs" />
+    <Compile Include="DTO\PieceOrderLastStateDto.cs" />
     <Compile Include="DTO\PieceTypeDto.cs" />
     <Compile Include="DTO\ProcessTypeDto.cs" />
     <Compile Include="DTO\ProductionLineDto.cs" />
@@ -58,6 +60,7 @@
     <Compile Include="ILibraryManager.cs" />
     <Compile Include="IMaterial.cs" />
     <Compile Include="IPiece.cs" />
+    <Compile Include="IPieceOrder.cs" />
     <Compile Include="IPieceType.cs" />
     <Compile Include="IProcessType.cs" />
     <Compile Include="IProductionLine.cs" />

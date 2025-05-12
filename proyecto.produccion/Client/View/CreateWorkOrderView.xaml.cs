@@ -27,7 +27,11 @@ namespace Client.View
             InitializeComponent();
             _ViewModel = new CreateWorkOrderViewModel()
             {
-                CloseAction = Close
+                CloseAction = Close,
+                ShowOrderCreatedMessage = () =>
+                {
+                    MessageBox.Show("La orden fue creada", "Éxito", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
             };
 
             DataContext = _ViewModel;

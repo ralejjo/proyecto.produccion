@@ -22,5 +22,7 @@ namespace Shared
         DateTime updatedAt { get; }
         //void InitializeWorkOrder(CreateWorkOrderDto workOrder);
         int CreateWorkOrder(CreateWorkOrderDto workOrder);
+        WorkOrderDto[] GetById(int workOrderId);
+        WorkOrderDto[] GetByPieceId(int pieceId);
     }
 }

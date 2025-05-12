@@ -26,7 +26,7 @@ namespace Host
                     new PaintPiece
                     {
                         colorId = processPiece.colorId,
-                        pieceId = pieceIdOnEntry
+                        pieceId = pieceIdOnProcess
                     }
                 );
             return result.identity;

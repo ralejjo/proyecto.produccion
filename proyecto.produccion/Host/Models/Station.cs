@@ -54,7 +54,35 @@ namespace Host
                     pieceid = pieceId.pieceId
                 }
             );
-            _pieceIdOnEntry = stationId.stationId;
+            _pieceIdOnEntry = pieceId.pieceId;
+        }
+
+        public void PutPieceOnProcess(StationDto stationId, PieceDto pieceId)
+        {
+            db.Execute
+            (
+                new PutPieceOnProcess
+                {
+                    stationid = stationId.stationId,
+                    pieceid = pieceId.pieceId
+                }
+            );
+            _pieceIdOnEntry = 0;
+            _pieceIdOnProcess = pieceId.pieceId;
+        }
+
+        public void PutPieceOnExit(StationDto stationId, PieceDto pieceId)
+        {
+            db.Execute
+            (
+                new PutPieceOnExit
+                {
+                    stationid = stationId.stationId,
+                    pieceid = pieceId.pieceId
+                }
+            );
+            _pieceIdOnProcess = 0;
+            _pieceIdOnExit = pieceId.pieceId;
         }
 
         public StationDto[] GetStationById(int stationId)

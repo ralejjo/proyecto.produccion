@@ -68,7 +68,7 @@ namespace Host
                         thickness = workOrder.Thickness,
                     }
                 );
-            var result = db.Execute
+            var newWorkOrder = db.Execute
                 (
                     new InsWorkOrder
                     {
@@ -81,16 +81,39 @@ namespace Host
                         processtypeid = workOrder.ProcessTypeId
                     }
                 );
-            return result.identity;
+            var newPieceOrder = db.Execute
+                (
+                    new InsPieceOrder
+                    {
+                        workOrderId = newWorkOrder.identity,
+                        pieceId = newPiece.identity
+                    }
+                );
+            return newWorkOrder.identity;
         }
 
-        //public void InitializeWorkOrder(CreateWorkOrderDto workOrder)
-        //{
-        //    _workOrderId = wo
-        //    _date = workOrder.Date;
-        //    _lote = workOrder.Lote;
-        //    _colada = workOrder.Colada;
+        public WorkOrderDto[] GetById(int workOrderId)
+        {
+            var result = db.Execute
+            (
+                new GetWorkOrderById
+                {
+                    workorderid = workOrderId
+                }
+            );
+            return result.rows.ToArray();
+        }
 
-        //}
+        public WorkOrderDto[] GetByPieceId(int pieceId)
+        {
+            var result = db.Execute
+            (
+                new GetWorkOrderByPieceId
+                {
+                    pieceid = pieceId
+                }
+            );
+            return result.rows.ToArray();
+        }
     }
 }

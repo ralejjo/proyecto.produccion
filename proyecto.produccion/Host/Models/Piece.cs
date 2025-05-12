@@ -55,6 +55,51 @@ namespace Host
                 }
             );
 
+            List<PieceDto> filteredPieces = new List<PieceDto>();
+
+            foreach ( var piece in result.rows)
+            {
+                var pieceOrderByPiece = db.Execute
+                    (
+                        new GetPieceOrderByPieceId
+                        {
+                            pieceid = piece.pieceId
+                        }
+                    );
+
+                if (pieceOrderByPiece.rows != null && pieceOrderByPiece.rows.Any())
+                {
+                    PieceOrderDto pieceOrder = pieceOrderByPiece.rows.ToArray()[0];
+
+                    var lastRelated = db.Execute
+                    (
+                        new PieceOrderLastState
+                        {
+                            workOrderId = pieceOrder.workOrderId
+                        }
+                    );
+
+                    PieceOrderLastStateDto lastState = lastRelated.rows.ToArray()[0];
+
+                    if (stateId >= lastState.stateId)
+                    {
+                        filteredPieces.Add(piece);
+                    }
+                }
+            }
+
+            return filteredPieces.ToArray();
+        }
+
+        public PieceDto[] GetById(int pieceId)
+        {
+            var result = db.Execute
+                    (
+                        new GetPieceById
+                        {
+                            id = pieceId
+                        }
+                    );
             return result.rows.ToArray();
         }
     }

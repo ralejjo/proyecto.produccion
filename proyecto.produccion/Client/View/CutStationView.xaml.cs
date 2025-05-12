@@ -27,10 +27,21 @@ namespace Client.View
             InitializeComponent();
             _ViewModel = new CutStationViewModel()
             {
-                CloseAction = Close
+                CloseAction = Close,
+                ShowPieceCutMessage = () =>
+                {
+                    MessageBox.Show("La pieza fue cortada", "Éxito", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
             };
 
             DataContext = _ViewModel;
+        }
+
+        private void BackToProductionLine_Click(object sender, RoutedEventArgs e)
+        {
+            var productionLineView = new ProductionLineView();
+            productionLineView.Show();
+            this.Close();
         }
     }
 }

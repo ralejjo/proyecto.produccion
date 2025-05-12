@@ -36,6 +36,7 @@ namespace Client.ViewModel
 
         public event EventHandler RequestClose;
         public Action CloseAction { get; set; }
+        public Action ShowOrderCreatedMessage { get; set; }
 
         public CreateWorkOrderDto WorkOrder { get; set; }
 
@@ -266,6 +267,7 @@ namespace Client.ViewModel
             LibraryManagerInstance.Instance.workOrder.CreateWorkOrder(WorkOrder);
 
             OnRequestClose();
+            ShowOrderCreatedMessage?.Invoke();
         }
 
         private bool CanAddWorkOrder()

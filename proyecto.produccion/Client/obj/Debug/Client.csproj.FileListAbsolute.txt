@@ -22,3 +22,5 @@ C:\Users\redon\source\repos\proyecto.produccion\proyecto.produccion\Client\obj\D
 C:\Users\redon\source\repos\proyecto.produccion\proyecto.produccion\Client\obj\Debug\View\CutStationView.baml
 C:\Users\redon\source\repos\proyecto.produccion\proyecto.produccion\Client\obj\Debug\View\ProductionLineView.g.cs
 C:\Users\redon\source\repos\proyecto.produccion\proyecto.produccion\Client\obj\Debug\View\ProductionLineView.baml
+C:\Users\redon\source\repos\proyecto.produccion\proyecto.produccion\Client\obj\Debug\View\PaintStationView.g.cs
+C:\Users\redon\source\repos\proyecto.produccion\proyecto.produccion\Client\obj\Debug\View\PaintStationView.baml

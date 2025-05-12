@@ -2,7 +2,7 @@
 
 namespace Host.Database
 {
-    [DbStoredProc("dbo.putPieceOnExit")]
+    [DbStoredProc("dbo.PutPieceOnExit")]
     internal class PutPieceOnExit
     {
         [DbParam]

@@ -28,7 +28,7 @@ namespace Host
                         length = processPiece.length,
                         width = processPiece.width,
                         thickness = processPiece.thickness,
-                        pieceId = pieceIdOnEntry
+                        pieceId = pieceIdOnProcess
                     }
                 );
             return result.identity;

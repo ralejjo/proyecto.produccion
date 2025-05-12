@@ -1,0 +1,283 @@
+
+****************************************************
+** New log start at: 12/5/2025 17:27:22                            
+****************************************************
+- 2025-05-12 17:27:22.425 [                      Host.exe:              5] [lap=2,41    mS]            Tenaris.Library.Log | - NEW THREAD
+- 2025-05-12 17:27:22.482 [                      Host.exe:              5] [lap=62,70   mS]            Tenaris.Library.Log | - Application Profiling Service configured, trying to activate Tenaris.Service.Profiling.ProfilingService, Tenaris.Service.Profiling
+! 2025-05-12 17:27:22.485 [                      Host.exe:              5] [lap=2,80    mS]            Tenaris.Library.Log | ! Application Profiling Service not loaded. Could not get type for type name Tenaris.Service.Profiling.ProfilingService, Tenaris.Service.Profiling
+- 2025-05-12 17:27:22.486 [                      Host.exe:              5] [lap=1,06    mS]            Tenaris.Library.Log | - Default configuration provider was created because no other was configured.
+- 2025-05-12 17:27:22.603 [                      Host.exe:              5] [lap=117,24  mS]            Tenaris.Library.Log | - [ASSEMBLY_LOADED] FullName=System.Data.resources, Version=4.0.0.0, Culture=es, PublicKeyToken=b77a5c561934e089 - Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Data.resources\v4.0_4.0.0.0_es_b77a5c561934e089\System.Data.resources.dll
+- 2025-05-12 17:27:22.769 [                      Host.exe:              5] [lap=165,97  mS]            Tenaris.Library.Log | - [ASSEMBLY_LOADED] FullName=System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a - Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.EnterpriseServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll
+- 2025-05-12 17:27:23.448 [                      Host.exe:              5] [lap=678,67  mS]            Tenaris.Library.Log | - [ASSEMBLY_LOADED] FullName=System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a - Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Caching\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.Caching.dll
+@ 2025-05-12 17:27:23.669 [                      Host.exe:              5] [lap=221,32  mS]            Tenaris.Library.Log | @ Binding property 'GetPieceByState.rows' should not have a public setter
+- 2025-05-12 17:27:23.850 [                      Host.exe:              5] [lap=181,26  mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceByState #stateId=1 - laptime=118,4254 ms
+ RESULT: [stateId=1]
+ RESULT SETS (1):
+  #0, 9 records [pieceId, colorId, materialId, stateId, typeId, width, length, thickness, pieceOrderId, isActive, startedAt, UpdatedAt]
+	[37, 2, 1, 1, 1, 0, 0, 0, 0, True, 6/5/2025 14:56:07, 6/5/2025 14:56:07]
+	[39, 2, 1, 1, 2, 0, 0, 0, 0, True, 6/5/2025 17:16:19, 6/5/2025 17:16:19]
+	[40, 2, 2, 1, 2, 0, 0, 0, 0, True, 6/5/2025 18:15:03, 6/5/2025 18:15:03]
+	[52, 3, 1, 1, 2, 10, 10, 10, 0, True, 11/5/2025 16:00:42, 11/5/2025 16:00:42]
+	...
+@ 2025-05-12 17:27:24.010 [                      Host.exe:              5] [lap=159,57  mS]            Tenaris.Library.Log | @ Binding property 'GetPieceOrderByPieceId.rows' should not have a public setter
+- 2025-05-12 17:27:24.106 [                      Host.exe:              5] [lap=95,30   mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceOrderByPieceId #pieceid=37 - laptime=92,8044 ms
+ RESULT: [pieceid=37]
+ RESULT SETS (1):
+  #0, 1 records [id, workOrderId, pieceId, isActive, startedAt, UpdatedAt]
+	[11, 21, 37, True, 6/5/2025 14:56:07, 6/5/2025 14:56:07]
+@ 2025-05-12 17:27:24.206 [                      Host.exe:              5] [lap=100,81  mS]            Tenaris.Library.Log | @ Binding property 'PieceOrderLastState.rows' should not have a public setter
+- 2025-05-12 17:27:24.308 [                      Host.exe:              5] [lap=101,51  mS]            Tenaris.Library.Log | - EXEC dbo.PieceOrderLastState #workOrderId=21 - laptime=99,7138 ms
+ RESULT: [workOrderId=21]
+ RESULT SETS (1):
+  #0, 1 records [stateId, workOrderId]
+	[1, 21]
+- 2025-05-12 17:27:24.410 [                      Host.exe:              5] [lap=102,60  mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceOrderByPieceId #pieceid=39 - laptime=101,849 ms
+ RESULT: [pieceid=39]
+ RESULT SETS (1):
+  #0, 1 records [id, workOrderId, pieceId, isActive, startedAt, UpdatedAt]
+	[12, 23, 39, True, 6/5/2025 17:16:20, 6/5/2025 17:16:20]
+- 2025-05-12 17:27:24.522 [                      Host.exe:              5] [lap=112,27  mS]            Tenaris.Library.Log | - EXEC dbo.PieceOrderLastState #workOrderId=23 - laptime=111,7144 ms
+ RESULT: [workOrderId=23]
+ RESULT SETS (1):
+  #0, 1 records [stateId, workOrderId]
+	[3, 23]
+- 2025-05-12 17:27:24.616 [                      Host.exe:              5] [lap=93,64   mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceOrderByPieceId #pieceid=40 - laptime=93,0639 ms
+ RESULT: [pieceid=40]
+ RESULT SETS (1):
+  #0, 1 records [id, workOrderId, pieceId, isActive, startedAt, UpdatedAt]
+	[13, 22, 40, True, 6/5/2025 18:15:03, 6/5/2025 18:15:03]
+- 2025-05-12 17:27:24.717 [                      Host.exe:              5] [lap=100,61  mS]            Tenaris.Library.Log | - EXEC dbo.PieceOrderLastState #workOrderId=22 - laptime=100,0239 ms
+ RESULT: [workOrderId=22]
+ RESULT SETS (1):
+  #0, 1 records [stateId, workOrderId]
+	[2, 22]
+- 2025-05-12 17:27:24.820 [                      Host.exe:              5] [lap=103,47  mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceOrderByPieceId #pieceid=52 - laptime=102,7414 ms
+ RESULT: [pieceid=52]
+ RESULT SETS (1):
+  #0, 1 records [id, workOrderId, pieceId, isActive, startedAt, UpdatedAt]
+	[20, 25, 52, True, 11/5/2025 18:33:32, 11/5/2025 18:33:32]
+- 2025-05-12 17:27:24.923 [                      Host.exe:              5] [lap=102,94  mS]            Tenaris.Library.Log | - EXEC dbo.PieceOrderLastState #workOrderId=25 - laptime=102,1139 ms
+ RESULT: [workOrderId=25]
+ RESULT SETS (1):
+  #0, 1 records [stateId, workOrderId]
+	[2, 25]
+- 2025-05-12 17:27:25.024 [                      Host.exe:              5] [lap=101,50  mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceOrderByPieceId #pieceid=57 - laptime=100,6144 ms
+ RESULT: [pieceid=57]
+ RESULT SETS (1):
+  #0, 1 records [id, workOrderId, pieceId, isActive, startedAt, UpdatedAt]
+	[23, 26, 57, True, 11/5/2025 18:42:54, 11/5/2025 18:42:54]
+- 2025-05-12 17:27:25.126 [                      Host.exe:              5] [lap=101,04  mS]            Tenaris.Library.Log | - EXEC dbo.PieceOrderLastState #workOrderId=26 - laptime=100,2495 ms
+ RESULT: [workOrderId=26]
+ RESULT SETS (1):
+  #0, 1 records [stateId, workOrderId]
+	[2, 26]
+- 2025-05-12 17:27:25.228 [                      Host.exe:              5] [lap=102,47  mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceOrderByPieceId #pieceid=59 - laptime=101,8742 ms
+ RESULT: [pieceid=59]
+ RESULT SETS (1):
+  #0, 1 records [id, workOrderId, pieceId, isActive, startedAt, UpdatedAt]
+	[25, 27, 59, True, 11/5/2025 23:39:45, 11/5/2025 23:39:45]
+- 2025-05-12 17:27:25.286 [                      Host.exe:              5] [lap=57,55   mS]            Tenaris.Library.Log | - EXEC dbo.PieceOrderLastState #workOrderId=27 - laptime=54,177 ms
+ RESULT: [workOrderId=27]
+ RESULT SETS (1):
+  #0, 1 records [stateId, workOrderId]
+	[2, 27]
+- 2025-05-12 17:27:25.434 [                      Host.exe:              5] [lap=147,99  mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceOrderByPieceId #pieceid=61 - laptime=147,4493 ms
+ RESULT: [pieceid=61]
+ RESULT SETS (1):
+  #0, 1 records [id, workOrderId, pieceId, isActive, startedAt, UpdatedAt]
+	[27, 24, 61, True, 12/5/2025 17:47:37, 12/5/2025 17:47:37]
+- 2025-05-12 17:27:25.542 [                      Host.exe:              5] [lap=108,70  mS]            Tenaris.Library.Log | - EXEC dbo.PieceOrderLastState #workOrderId=24 - laptime=108,2083 ms
+ RESULT: [workOrderId=24]
+ RESULT SETS (1):
+  #0, 1 records [stateId, workOrderId]
+	[4, 24]
+- 2025-05-12 17:27:25.638 [                      Host.exe:              5] [lap=95,44   mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceOrderByPieceId #pieceid=66 - laptime=94,567 ms
+ RESULT: [pieceid=66]
+ RESULT SETS (1):
+  #0, 1 records [id, workOrderId, pieceId, isActive, startedAt, UpdatedAt]
+	[32, 28, 66, True, 12/5/2025 17:54:09, 12/5/2025 17:54:09]
+- 2025-05-12 17:27:25.744 [                      Host.exe:              5] [lap=105,98  mS]            Tenaris.Library.Log | - EXEC dbo.PieceOrderLastState #workOrderId=28 - laptime=105,3627 ms
+ RESULT: [workOrderId=28]
+ RESULT SETS (1):
+  #0, 1 records [stateId, workOrderId]
+	[2, 28]
+- 2025-05-12 17:27:25.844 [                      Host.exe:              5] [lap=100,02  mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceOrderByPieceId #pieceid=69 - laptime=99,396 ms
+ RESULT: [pieceid=69]
+ RESULT SETS (1):
+  #0, 1 records [id, workOrderId, pieceId, isActive, startedAt, UpdatedAt]
+	[34, 29, 69, True, 12/5/2025 19:38:33, 12/5/2025 19:38:33]
+- 2025-05-12 17:27:25.948 [                      Host.exe:              5] [lap=103,83  mS]            Tenaris.Library.Log | - EXEC dbo.PieceOrderLastState #workOrderId=29 - laptime=103,2256 ms
+ RESULT: [workOrderId=29]
+ RESULT SETS (1):
+  #0, 1 records [stateId, workOrderId]
+	[2, 29]
+- 2025-05-12 17:27:26.051 [                      Host.exe:              5] [lap=102,89  mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceByState #stateId=2 - laptime=90,1327 ms
+ RESULT: [stateId=2]
+ RESULT SETS (1):
+  #0, 12 records [pieceId, colorId, materialId, stateId, typeId, width, length, thickness, pieceOrderId, isActive, startedAt, UpdatedAt]
+	[43, 4, 2, 2, 2, 30, 30, 30, 0, True, 8/5/2025 19:25:54, 8/5/2025 19:25:54]
+	[44, 4, 2, 2, 2, 30, 30, 30, 0, True, 10/5/2025 15:01:20, 10/5/2025 15:01:20]
+	[45, 4, 2, 2, 2, 111, 111, 111, 0, True, 10/5/2025 15:21:30, 10/5/2025 15:21:30]
+	[54, 3, 1, 2, 2, 10, 10, 20, 0, True, 11/5/2025 18:20:35, 11/5/2025 18:20:35]
+	...
+- 2025-05-12 17:27:26.154 [                      Host.exe:              5] [lap=103,09  mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceOrderByPieceId #pieceid=43 - laptime=102,2188 ms
+ RESULT: [pieceid=43]
+ RESULT SETS (1):
+  #0, 1 records [id, workOrderId, pieceId, isActive, startedAt, UpdatedAt]
+	[14, 22, 43, True, 8/5/2025 19:25:54, 8/5/2025 19:25:54]
+- 2025-05-12 17:27:26.256 [                      Host.exe:              5] [lap=102,39  mS]            Tenaris.Library.Log | - EXEC dbo.PieceOrderLastState #workOrderId=22 - laptime=101,6854 ms
+ RESULT: [workOrderId=22]
+ RESULT SETS (1):
+  #0, 1 records [stateId, workOrderId]
+	[2, 22]
+- 2025-05-12 17:27:26.357 [                      Host.exe:              5] [lap=101,19  mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceOrderByPieceId #pieceid=44 - laptime=100,5412 ms
+ RESULT: [pieceid=44]
+ RESULT SETS (1):
+  #0, 1 records [id, workOrderId, pieceId, isActive, startedAt, UpdatedAt]
+	[15, 22, 44, True, 10/5/2025 15:01:20, 10/5/2025 15:01:20]
+- 2025-05-12 17:27:26.475 [                      Host.exe:              5] [lap=118,27  mS]            Tenaris.Library.Log | - EXEC dbo.PieceOrderLastState #workOrderId=22 - laptime=117,5858 ms
+ RESULT: [workOrderId=22]
+ RESULT SETS (1):
+  #0, 1 records [stateId, workOrderId]
+	[2, 22]
+- 2025-05-12 17:27:26.765 [                      Host.exe:              5] [lap=289,47  mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceOrderByPieceId #pieceid=45 - laptime=288,264 ms
+ RESULT: [pieceid=45]
+ RESULT SETS (1):
+  #0, 1 records [id, workOrderId, pieceId, isActive, startedAt, UpdatedAt]
+	[16, 22, 45, True, 10/5/2025 15:21:30, 10/5/2025 15:21:30]
+- 2025-05-12 17:27:26.867 [                      Host.exe:              5] [lap=101,91  mS]            Tenaris.Library.Log | - EXEC dbo.PieceOrderLastState #workOrderId=22 - laptime=101,0828 ms
+ RESULT: [workOrderId=22]
+ RESULT SETS (1):
+  #0, 1 records [stateId, workOrderId]
+	[2, 22]
+- 2025-05-12 17:27:26.976 [                      Host.exe:              5] [lap=109,23  mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceOrderByPieceId #pieceid=54 - laptime=108,3086 ms
+ RESULT: [pieceid=54]
+ RESULT SETS (1):
+- 2025-05-12 17:27:27.072 [                      Host.exe:              5] [lap=95,50   mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceOrderByPieceId #pieceid=55 - laptime=89,7459 ms
+ RESULT: [pieceid=55]
+ RESULT SETS (1):
+  #0, 1 records [id, workOrderId, pieceId, isActive, startedAt, UpdatedAt]
+	[21, 25, 55, True, 11/5/2025 18:34:01, 11/5/2025 18:34:01]
+- 2025-05-12 17:27:27.187 [                      Host.exe:              5] [lap=115,55  mS]            Tenaris.Library.Log | - EXEC dbo.PieceOrderLastState #workOrderId=25 - laptime=114,6929 ms
+ RESULT: [workOrderId=25]
+ RESULT SETS (1):
+  #0, 1 records [stateId, workOrderId]
+	[2, 25]
+- 2025-05-12 17:27:27.278 [                      Host.exe:              5] [lap=90,01   mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceOrderByPieceId #pieceid=56 - laptime=89,1473 ms
+ RESULT: [pieceid=56]
+ RESULT SETS (1):
+  #0, 1 records [id, workOrderId, pieceId, isActive, startedAt, UpdatedAt]
+	[22, 25, 56, True, 11/5/2025 18:42:01, 11/5/2025 18:42:01]
+- 2025-05-12 17:27:27.379 [                      Host.exe:              5] [lap=102,11  mS]            Tenaris.Library.Log | - EXEC dbo.PieceOrderLastState #workOrderId=25 - laptime=101,3379 ms
+ RESULT: [workOrderId=25]
+ RESULT SETS (1):
+  #0, 1 records [stateId, workOrderId]
+	[2, 25]
+- 2025-05-12 17:27:27.485 [                      Host.exe:              5] [lap=105,48  mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceOrderByPieceId #pieceid=58 - laptime=104,9162 ms
+ RESULT: [pieceid=58]
+ RESULT SETS (1):
+  #0, 1 records [id, workOrderId, pieceId, isActive, startedAt, UpdatedAt]
+	[24, 26, 58, True, 11/5/2025 18:43:12, 11/5/2025 18:43:12]
+- 2025-05-12 17:27:27.591 [                      Host.exe:              5] [lap=105,66  mS]            Tenaris.Library.Log | - EXEC dbo.PieceOrderLastState #workOrderId=26 - laptime=105,168 ms
+ RESULT: [workOrderId=26]
+ RESULT SETS (1):
+  #0, 1 records [stateId, workOrderId]
+	[2, 26]
+- 2025-05-12 17:27:27.686 [                      Host.exe:              5] [lap=95,87   mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceOrderByPieceId #pieceid=60 - laptime=95,137 ms
+ RESULT: [pieceid=60]
+ RESULT SETS (1):
+  #0, 1 records [id, workOrderId, pieceId, isActive, startedAt, UpdatedAt]
+	[26, 27, 60, True, 12/5/2025 17:29:24, 12/5/2025 17:29:24]
+- 2025-05-12 17:27:27.751 [                      Host.exe:              5] [lap=64,43   mS]            Tenaris.Library.Log | - EXEC dbo.PieceOrderLastState #workOrderId=27 - laptime=63,6862 ms
+ RESULT: [workOrderId=27]
+ RESULT SETS (1):
+  #0, 1 records [stateId, workOrderId]
+	[2, 27]
+- 2025-05-12 17:27:27.893 [                      Host.exe:              5] [lap=141,81  mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceOrderByPieceId #pieceid=62 - laptime=141,1001 ms
+ RESULT: [pieceid=62]
+ RESULT SETS (1):
+  #0, 1 records [id, workOrderId, pieceId, isActive, startedAt, UpdatedAt]
+	[28, 24, 62, True, 12/5/2025 17:48:26, 12/5/2025 17:48:26]
+- 2025-05-12 17:27:27.994 [                      Host.exe:              5] [lap=101,45  mS]            Tenaris.Library.Log | - EXEC dbo.PieceOrderLastState #workOrderId=24 - laptime=100,8889 ms
+ RESULT: [workOrderId=24]
+ RESULT SETS (1):
+  #0, 1 records [stateId, workOrderId]
+	[4, 24]
+- 2025-05-12 17:27:28.098 [                      Host.exe:              5] [lap=104,10  mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceOrderByPieceId #pieceid=64 - laptime=103,3934 ms
+ RESULT: [pieceid=64]
+ RESULT SETS (1):
+  #0, 1 records [id, workOrderId, pieceId, isActive, startedAt, UpdatedAt]
+	[30, 24, 64, True, 12/5/2025 17:52:31, 12/5/2025 17:52:31]
+- 2025-05-12 17:27:28.198 [                      Host.exe:              5] [lap=99,91   mS]            Tenaris.Library.Log | - EXEC dbo.PieceOrderLastState #workOrderId=24 - laptime=99,3939 ms
+ RESULT: [workOrderId=24]
+ RESULT SETS (1):
+  #0, 1 records [stateId, workOrderId]
+	[4, 24]
+- 2025-05-12 17:27:28.303 [                      Host.exe:              5] [lap=105,34  mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceOrderByPieceId #pieceid=67 - laptime=104,723 ms
+ RESULT: [pieceid=67]
+ RESULT SETS (1):
+  #0, 1 records [id, workOrderId, pieceId, isActive, startedAt, UpdatedAt]
+	[33, 28, 67, True, 12/5/2025 17:54:38, 12/5/2025 17:54:38]
+- 2025-05-12 17:27:28.403 [                      Host.exe:              5] [lap=99,70   mS]            Tenaris.Library.Log | - EXEC dbo.PieceOrderLastState #workOrderId=28 - laptime=99,1804 ms
+ RESULT: [workOrderId=28]
+ RESULT SETS (1):
+  #0, 1 records [stateId, workOrderId]
+	[2, 28]
+- 2025-05-12 17:27:28.517 [                      Host.exe:              5] [lap=113,09  mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceOrderByPieceId #pieceid=70 - laptime=112,4652 ms
+ RESULT: [pieceid=70]
+ RESULT SETS (1):
+  #0, 1 records [id, workOrderId, pieceId, isActive, startedAt, UpdatedAt]
+	[35, 29, 70, True, 12/5/2025 19:39:24, 12/5/2025 19:39:24]
+- 2025-05-12 17:27:28.608 [                      Host.exe:              5] [lap=91,50   mS]            Tenaris.Library.Log | - EXEC dbo.PieceOrderLastState #workOrderId=29 - laptime=90,8435 ms
+ RESULT: [workOrderId=29]
+ RESULT SETS (1):
+  #0, 1 records [stateId, workOrderId]
+	[2, 29]
+- 2025-05-12 17:27:28.710 [                      Host.exe:              5] [lap=102,50  mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceByState #stateId=3 - laptime=87,6088 ms
+ RESULT: [stateId=3]
+ RESULT SETS (1):
+  #0, 2 records [pieceId, colorId, materialId, stateId, typeId, width, length, thickness, pieceOrderId, isActive, startedAt, UpdatedAt]
+	[42, 2, 2, 3, 2, 30, 30, 30, 0, True, 8/5/2025 18:57:15, 8/5/2025 18:57:15]
+	[46, 4, 1, 3, 2, 45, 45, 45, 0, True, 10/5/2025 16:11:48, 10/5/2025 16:11:48]
+- 2025-05-12 17:27:28.812 [                      Host.exe:              5] [lap=102,11  mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceOrderByPieceId #pieceid=42 - laptime=101,4014 ms
+ RESULT: [pieceid=42]
+ RESULT SETS (1):
+- 2025-05-12 17:27:28.915 [                      Host.exe:              5] [lap=102,56  mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceOrderByPieceId #pieceid=46 - laptime=101,8845 ms
+ RESULT: [pieceid=46]
+ RESULT SETS (1):
+  #0, 1 records [id, workOrderId, pieceId, isActive, startedAt, UpdatedAt]
+	[17, 23, 46, True, 10/5/2025 16:11:48, 10/5/2025 16:11:48]
+- 2025-05-12 17:27:29.017 [                      Host.exe:              5] [lap=102,15  mS]            Tenaris.Library.Log | - EXEC dbo.PieceOrderLastState #workOrderId=23 - laptime=101,3633 ms
+ RESULT: [workOrderId=23]
+ RESULT SETS (1):
+  #0, 1 records [stateId, workOrderId]
+	[3, 23]
+@ 2025-05-12 17:27:40.181 [                      Host.exe:              5] [lap=11,16    S]            Tenaris.Library.Log | @ Binding property 'GetStationById.rows' should not have a public setter
+- 2025-05-12 17:27:40.286 [                      Host.exe:              5] [lap=106,01  mS]            Tenaris.Library.Log | - EXEC dbo.GetStationByIdAle #id=4 - laptime=100,7411 ms
+ RESULT: [id=4]
+ RESULT SETS (1):
+  #0, 1 records [stationId, name, pieceIdOnEntry, pieceIdOnProcess, pieceIdOnExit, stationTypeId, productionLineId, isActive, startedAt, updatedAt]
+	[4, Pintura, 46, 0, 0, 4, 1, True, 3/5/2025 13:45:11, 3/5/2025 13:45:11]
+- 2025-05-12 17:27:40.690 [                      Host.exe:              5] [lap=403,78  mS]            Tenaris.Library.Log | - EXEC dbo.PutPieceOnEntry #stationid=4#pieceid=46 - laptime=199,256 ms
+- 2025-05-12 17:27:41.516 [                      Host.exe:              5] [lap=825,37  mS]            Tenaris.Library.Log | - EXEC dbo.GetStationByIdAle #id=4 - laptime=153,9872 ms
+ RESULT: [id=4]
+ RESULT SETS (1):
+  #0, 1 records [stationId, name, pieceIdOnEntry, pieceIdOnProcess, pieceIdOnExit, stationTypeId, productionLineId, isActive, startedAt, updatedAt]
+	[4, Pintura, 46, 0, 0, 4, 1, True, 3/5/2025 13:45:11, 3/5/2025 13:45:11]
+- 2025-05-12 17:27:47.656 [                      Host.exe:              9] [lap=738,70  uS]            Tenaris.Library.Log | - NEW THREAD
+@ 2025-05-12 17:27:47.656 [                      Host.exe:              9] [lap=182,90  uS]            Tenaris.Library.Log | @ Binding property 'GetPieceById.rows' should not have a public setter
+- 2025-05-12 17:27:47.759 [                      Host.exe:              9] [lap=103,47  mS]            Tenaris.Library.Log | - EXEC dbo.GetPieceByIdAle #id=46 - laptime=101,9981 ms
+ RESULT: [id=46]
+ RESULT SETS (1):
+  #0, 1 records [pieceId, colorId, materialId, stateId, typeId, width, length, thickness, pieceOrderId, isActive, startedAt, UpdatedAt]
+	[46, 4, 1, 3, 2, 45, 45, 45, 0, True, 10/5/2025 16:11:48, 10/5/2025 16:11:48]
+- 2025-05-12 17:27:47.962 [                      Host.exe:              9] [lap=201,96  mS]            Tenaris.Library.Log | - EXEC dbo.PutPieceOnProcess #stationid=4#pieceid=46 - laptime=100,5754 ms
+- 2025-05-12 17:27:48.052 [                      Host.exe:              9] [lap=90,62   mS]            Tenaris.Library.Log | - EXEC dbo.GetStationByIdAle #id=4 - laptime=88,6431 ms
+ RESULT: [id=4]
+ RESULT SETS (1):
+  #0, 1 records [stationId, name, pieceIdOnEntry, pieceIdOnProcess, pieceIdOnExit, stationTypeId, productionLineId, isActive, startedAt, updatedAt]
+	[4, Pintura, 0, 46, 0, 4, 1, True, 3/5/2025 13:45:11, 3/5/2025 13:45:11]
+@ 2025-05-12 17:27:48.116 [                      Host.exe:              9] [lap=63,55   mS]            Tenaris.Library.Log | @ Binding property 'GetWorkOrderByPieceId.rows' should not have a public setter
+- 2025-05-12 17:27:48.269 [                      Host.exe:              9] [lap=153,37  mS]            Tenaris.Library.Log | - EXEC dbo.GetWorkOrderByPieceIdAle #pieceid=46 - laptime=152,2913 ms
+ RESULT: [pieceid=46]
+ RESULT SETS (1):

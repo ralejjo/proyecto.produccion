@@ -22,5 +22,6 @@ namespace Shared
         DateTime startedAt { get; }
         DateTime UpdatedAt { get; }
         PieceDto[] GetAllByState(int stateId);
+        PieceDto[] GetById(int pieceId);
     }
 }

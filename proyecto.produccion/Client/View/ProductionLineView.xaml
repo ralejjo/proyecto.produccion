@@ -28,7 +28,32 @@
                     <ComboBox x:Name="cbxPieceOnEntryToCut" ItemsSource="{Binding PieceList}" SelectedValue="{Binding Piece.pieceId}" DisplayMemberPath="pieceId" SelectedValuePath="pieceId"/>
                 </StackPanel>
                 <StackPanel Orientation="Vertical">
-                    <Button x:Name="btnSavePieceOnEntry" Content="Ingresar Pieza" Command="{Binding PutPieceOnEntryCommand}"/>
+                    <Button x:Name="btnSavePieceOnEntryToCut" Content="Ingresar Pieza" Command="{Binding PutPieceOnEntryToCutCommand}"/>
+                    <Button Content="Ir a la estación de corte" Click="GoToCutStation_Click"/>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel x:Name="Stack1" Grid.Column="2" Margin="0,0,0,144" Grid.RowSpan="2">
+                <Label Content="Estación de Calidad"/>
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Seleccione una pieza"/>
+                    <ComboBox x:Name="cbxPieceOnEntryToQuality" ItemsSource="{Binding PieceToQualityList}" SelectedValue="{Binding Piece.pieceId}" DisplayMemberPath="pieceId" SelectedValuePath="pieceId"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Button x:Name="btnSavePieceOnEntryQuality" Content="Ingresar Pieza" Command="{Binding PutPieceOnEntryToQualityCommand}"/>
+                    <Button Content="Ir a la estación de calidad" Click="GoToQualityStation_Click"/>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel x:Name="Stack2" Grid.Column="3" Margin="0,0,0,144" Grid.RowSpan="2">
+                <Label Content="Estación de Corte"/>
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Seleccione una pieza"/>
+                    <ComboBox x:Name="cbxPieceOnEntryToPaint" ItemsSource="{Binding PieceToPaintList}" SelectedValue="{Binding Piece.pieceId}" DisplayMemberPath="pieceId" SelectedValuePath="pieceId"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Button x:Name="btnSavePieceOnEntryPaint" Content="Ingresar Pieza" Command="{Binding PutPieceOnEntryToPaintCommand}"/>
+                    <Button Content="Ir a la estación de pintura" Click="GoToPaintStation_Click"/>
                 </StackPanel>
             </StackPanel>
 
