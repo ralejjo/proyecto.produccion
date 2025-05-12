@@ -1,0 +1,96 @@
+﻿<Window x:Class="Client.View.QualityStationView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client.View"
+        xmlns:viewmodel="clr-namespace:Client.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:QualityStationViewModel}"
+        mc:Ignorable="d"
+        Title="QualityStationView" Height="450" Width="800">
+    <DockPanel RenderTransformOrigin="0.502,0.478">
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Background="LightGray" Height="30">
+            <Button Content="Volver" Margin="10,0,0,0" Width="100" Height="20" Click="BackToProductionLine_Click"/>
+        </StackPanel>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel x:Name="StackLeft" Grid.Column="0">
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Pieza de Entrada"/>
+                    <TextBlock Text="{Binding Station.pieceIdOnEntry}" Width="240" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Button x:Name="btnStartProcess" Content="Evaluar" Command="{Binding PutPieceOnProcessCommand}" Width="160"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Pieza En Proceso"/>
+                    <TextBlock Text="{Binding Station.pieceIdOnProcess}" Width="240" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Pieza En Salida"/>
+                    <TextBlock Text="{Binding Station.pieceIdOnExit}" Width="240" />
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel x:Name="StackCenter" Grid.Column="1">
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Pieza Real:"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Longitud:"/>
+                    <TextBlock Text="{Binding Piece.length}" Height="15" Width="25" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Ancho:"/>
+                    <TextBlock Text="{Binding Piece.width}" Height="15" Width="25"  />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Espesor:"/>
+                    <TextBlock Text="{Binding Piece.thickness}" Height="15" Width="25" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Color:"/>
+                    <TextBlock Text="{Binding Color.description}" Height="15" Width="150" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Tipo de Pieza:"/>
+                    <TextBlock Text="{Binding PieceType.description}" Height="15" Width="150" />
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel x:Name="StackRight" Grid.Column="2">
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Pieza Solicitada:"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Longitud:"/>
+                    <TextBlock Text="{Binding OrderedPiece.length}" Height="15" Width="25" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Ancho:"/>
+                    <TextBlock Text="{Binding OrderedPiece.width}" Height="15" Width="25"  />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Espesor:"/>
+                    <TextBlock Text="{Binding OrderedPiece.thickness}" Height="15" Width="25" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Color:"/>
+                    <TextBlock Text="{Binding OrderedColor.description}" Height="15" Width="150" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Tipo de Pieza:"/>
+                    <TextBlock Text="{Binding OrderedPieceType.description}" Height="15" Width="150" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Button x:Name="btnApprovePiece" Content="Aprobar" Command="{Binding ApprovePieceCommand}" IsEnabled="{Binding CanClickButton}" Width="100"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </DockPanel>
+</Window>

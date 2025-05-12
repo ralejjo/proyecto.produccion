@@ -60,8 +60,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\ApprovePiece.cs" />
     <Compile Include="Database\Context.cs" />
     <Compile Include="Database\CortarPieza.cs" />
+    <Compile Include="Database\GetAllColor.cs" />
     <Compile Include="Database\GetClient.cs" />
     <Compile Include="Database\GetColor.cs" />
     <Compile Include="Database\GetMaterial.cs" />
@@ -95,6 +97,7 @@
     <Compile Include="Models\ProcessType.cs" />
     <Compile Include="Models\ProductionLine.cs" />
     <Compile Include="Models\CutStation.cs" />
+    <Compile Include="Models\QualityStation.cs" />
     <Compile Include="Models\State.cs" />
     <Compile Include="Models\Station.cs" />
     <Compile Include="Models\WorkOrder.cs" />

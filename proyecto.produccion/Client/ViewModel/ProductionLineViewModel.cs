@@ -175,10 +175,10 @@ namespace Client.ViewModel
 
         private void PutPieceOnEntryToQuality()
         {
-            //StationDto[] station = LibraryManagerInstance.Instance.qualityStation.GetStationById((int)StationModel.Corte).ToArray();
-            //Station = station[0];
-            //LibraryManagerInstance.Instance.qualityStation.InitializeStation(Station);
-            //LibraryManagerInstance.Instance.qualityStation.PutPieceOnEntry(Station, Piece);
+            StationDto[] station = LibraryManagerInstance.Instance.qualityStation.GetStationById((int)StationModel.Calidad).ToArray();
+            Station = station[0];
+            LibraryManagerInstance.Instance.qualityStation.InitializeStation(Station);
+            LibraryManagerInstance.Instance.qualityStation.PutPieceOnEntry(Station, Piece);
         }
 
         private bool CanPutPieceOnEntryToQuality()

@@ -22,6 +22,7 @@ namespace Host
         private State _State;
         private Piece _Piece;
         private PaintStation _PaintStation;
+        private QualityStation _QualityStation;
         private PieceOrder _PieceOrder;
 
         public IProductionLine productionLine { get { return _ProductionLine; } }
@@ -35,6 +36,7 @@ namespace Host
         public IState state { get { return _State; } }
         public IPiece piece { get { return _Piece; } }
         public IStation paintStation { get { return _PaintStation; } }
+        public IStation qualityStation { get { return _QualityStation; } }
         public IPieceOrder pieceOrder { get { return _PieceOrder; } }
 
         public LibraryManager()
@@ -49,6 +51,7 @@ namespace Host
             _PieceType = new PieceType();
             _State = new State();
             _PaintStation = new PaintStation();
+            _QualityStation = new QualityStation();
             _Piece = new Piece();
             _PieceOrder = new PieceOrder();
         }

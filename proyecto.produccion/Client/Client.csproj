@@ -63,6 +63,7 @@
     <Compile Include="ViewModel\CutStationViewModel.cs" />
     <Compile Include="ViewModel\PaintStationViewModel.cs" />
     <Compile Include="ViewModel\ProductionLineViewModel.cs" />
+    <Compile Include="ViewModel\QualityStationViewModel.cs" />
     <Compile Include="View\CreateWorkOrderView.xaml.cs">
       <DependentUpon>CreateWorkOrderView.xaml</DependentUpon>
     </Compile>
@@ -74,6 +75,9 @@
     </Compile>
     <Compile Include="View\ProductionLineView.xaml.cs">
       <DependentUpon>ProductionLineView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\QualityStationView.xaml.cs">
+      <DependentUpon>QualityStationView.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -101,6 +105,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\ProductionLineView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\QualityStationView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

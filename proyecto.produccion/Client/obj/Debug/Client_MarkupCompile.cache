@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\redon\source\repos\proyecto.produccion\proyecto.produccion\Client\App.xaml
-5-268580095
+6-1261951378
 
-18-419738975
+20609861501
 1480103806
-MainWindow.xaml;View\CreateWorkOrderView.xaml;View\CutStationView.xaml;View\PaintStationView.xaml;View\ProductionLineView.xaml;
+MainWindow.xaml;View\CreateWorkOrderView.xaml;View\CutStationView.xaml;View\PaintStationView.xaml;View\ProductionLineView.xaml;View\QualityStationView.xaml;
 
 False
 

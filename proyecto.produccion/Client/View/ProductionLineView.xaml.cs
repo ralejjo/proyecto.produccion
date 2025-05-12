@@ -49,9 +49,9 @@ namespace Client.View
 
         private void GoToQualityStation_Click(object sender, RoutedEventArgs e)
         {
-            //var cutStationView = new CutStationView();
-            //cutStationView.Show();
-            //this.Close();
+            var qualityStationView = new QualityStationView();
+            qualityStationView.Show();
+            this.Close();
         }
 
         private void GoToPaintStation_Click(object sender, RoutedEventArgs e)

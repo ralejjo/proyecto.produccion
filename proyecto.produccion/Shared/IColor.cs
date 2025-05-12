@@ -15,5 +15,6 @@ namespace Shared
         DateTime startedAt { get; }
         DateTime updatedAt { get; }
         ColorDto[] GetAll();
+        ColorDto[] GetAllIncludingNoColor();
     }
 }

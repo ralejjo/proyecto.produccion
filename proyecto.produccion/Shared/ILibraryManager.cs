@@ -19,7 +19,7 @@ namespace Shared
         IState state { get; }
         IStation cutStation { get; }
         IStation paintStation { get; }
-        //IStationType stationType { get; }
+        IStation qualityStation {  get; }
         IWorkOrder workOrder { get; }
         IPieceOrder pieceOrder { get; }
     }

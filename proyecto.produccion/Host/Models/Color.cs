@@ -40,5 +40,15 @@ namespace Host
 
             return result.rows.ToArray();
         }
+
+        public ColorDto[] GetAllIncludingNoColor()
+        {
+            var result = db.Execute
+            (
+                new GetAllColor { }
+            );
+
+            return result.rows.ToArray();
+        }
     }
 }
