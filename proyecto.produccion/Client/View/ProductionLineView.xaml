@@ -46,7 +46,7 @@
             </StackPanel>
 
             <StackPanel x:Name="Stack2" Grid.Column="3" Margin="0,0,0,144" Grid.RowSpan="2">
-                <Label Content="Estación de Corte"/>
+                <Label Content="Estación de Pintura"/>
                 <StackPanel Orientation="Vertical">
                     <Label Content="Seleccione una pieza"/>
                     <ComboBox x:Name="cbxPieceOnEntryToPaint" ItemsSource="{Binding PieceToPaintList}" SelectedValue="{Binding Piece.pieceId}" DisplayMemberPath="pieceId" SelectedValuePath="pieceId"/>
