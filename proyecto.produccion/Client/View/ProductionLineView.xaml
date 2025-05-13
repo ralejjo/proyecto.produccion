@@ -21,6 +21,18 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
+            <StackPanel x:Name="StackEntry" Grid.Column="0" Margin="0,0,0,144" Grid.RowSpan="2">
+                <Label Content="Estación de Ingreso"/>
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Seleccione una orden"/>
+                    <!--<ComboBox x:Name="cbxPieceOnEntryToEntry" ItemsSource="{Binding PieceList}" SelectedValue="{Binding Piece.pieceId}" DisplayMemberPath="pieceId" SelectedValuePath="pieceId"/>-->
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Button x:Name="btnSavePieceOnEntryToEntry" Content="Ingresar Orden" Command="{Binding PutPieceOnEntryToEntryCommand}"/>
+                    <Button Content="Ir a la estación de entrada" Click="GoToEntryStation_Click"/>
+                </StackPanel>
+            </StackPanel>
+
             <StackPanel x:Name="Stack0" Grid.Column="1" Margin="0,0,0,144" Grid.RowSpan="2">
                 <Label Content="Estación de Corte"/>
                 <StackPanel Orientation="Vertical">

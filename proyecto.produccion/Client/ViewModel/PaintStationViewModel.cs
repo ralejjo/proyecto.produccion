@@ -86,6 +86,8 @@ namespace Client.ViewModel
 
         private void PaintPiece()
         {
+            OnPropertyChanged(nameof(Piece));
+
             int newPieceId = LibraryManagerInstance.Instance.paintStation.ProcessPiece(Piece);
             PieceDto[] piece = LibraryManagerInstance.Instance.piece.GetById(newPieceId);
             Piece = piece[0];
@@ -94,7 +96,6 @@ namespace Client.ViewModel
             StationDto[] station = LibraryManagerInstance.Instance.paintStation.GetStationById((int)StationModel.Pintura).ToArray();
             Station = station[0];
 
-            OnPropertyChanged(nameof(Piece));
             OnPropertyChanged(nameof(Station));
             ShowPiecePaintMessage?.Invoke();
         }
@@ -136,6 +137,7 @@ namespace Client.ViewModel
             OnPropertyChanged(nameof(OrderedPiece));
             OnPropertyChanged(nameof(Color));
             OnPropertyChanged(nameof(PieceType));
+            OnPropertyChanged(nameof(Piece));
         }
 
         private bool CanPutPieceOnProcess()

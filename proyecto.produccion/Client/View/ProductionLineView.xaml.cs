@@ -60,5 +60,12 @@ namespace Client.View
             paintStationView.Show();
             this.Close();
         }
+
+        private void GoToEntryStation_Click(object sender, RoutedEventArgs e)
+        {
+            //var entryStationView = new EntryStationView();
+            //entryStationView.Show();
+            //this.Close();
+        }
     }
 }

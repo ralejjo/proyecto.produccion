@@ -40,7 +40,7 @@
             <StackPanel x:Name="StackCenter" Grid.Column="1">
                 <StackPanel Orientation="Vertical">
                     <Label Content="Color"/>
-                    <ComboBox ItemsSource="{Binding ColorList}" SelectedValue="{Binding Piece.pieceId}" DisplayMemberPath="description" SelectedValuePath="id"/>
+                    <ComboBox ItemsSource="{Binding ColorList}" SelectedValue="{Binding Piece.colorId}" DisplayMemberPath="description" SelectedValuePath="id"/>
                 </StackPanel>
                 <StackPanel Orientation="Vertical">
                     <Button x:Name="btnPaintPiece" Content="Pintar Pieza" Command="{Binding PaintPieceCommand}" IsEnabled="{Binding CanClickButton}"/>

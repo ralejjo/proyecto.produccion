@@ -61,6 +61,7 @@
     <Compile Include="Model\StationModel.cs" />
     <Compile Include="ViewModel\CreateWorkOrderViewModel.cs" />
     <Compile Include="ViewModel\CutStationViewModel.cs" />
+    <Compile Include="ViewModel\EntryStationViewModel.cs" />
     <Compile Include="ViewModel\PaintStationViewModel.cs" />
     <Compile Include="ViewModel\ProductionLineViewModel.cs" />
     <Compile Include="ViewModel\QualityStationViewModel.cs" />
